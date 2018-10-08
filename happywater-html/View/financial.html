@@ -1,0 +1,27 @@
+<div class="loginContent" ng-controller="financialCtrl" >
+    <div class="head" >
+        理财列表
+    </div>
+
+
+
+    <div ng-repeat = "x in finances" class="financeRow" ng-click="product()"  >
+        <div >
+            <div class="productName">{{x.productName}}</div>
+
+            <div class="investmentCycle" >{{x.investmentCycle}}天</div>
+        </div>
+
+        <div style="border-left:1px solid #d9d9d9; padding-left:calc(50% - 115px)">
+            <div class="proProfit">{{x.proProfit}}%</div>
+
+            <div class="financeTip">预期年化收益率</div>
+        </div>
+
+
+    </div>
+
+
+
+
+</div>

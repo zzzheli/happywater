@@ -1,0 +1,32 @@
+<div class="loginContent" ng-controller="loginCtrl" >
+    <div class="head" >
+        <i class="fa fa-chevron-left pull-left fa-lg"></i>
+        登录
+    </div>
+
+
+    <form class="bg" >
+
+    <img src="../imgs/logo.png"  class="logo" height="257" width="253"/>
+    <div class="user">
+        <img src="../imgs/13.png" height="19" width="13"/>
+        <input   type="search" ng-model="phoneNumber" class="bor"  placeholder="请输入您的手机号"/>
+    </div>
+    <div class="psw">
+        <img src="../imgs/14.png" height="18.5" width="14"/>
+        <input  type="password" ng-model="passWord" class="bor"  placeholder="密码" />
+        <!--<input type="{{type ? 'text' : 'password'}}" ng-model="password" />-->
+        <!--<input type="checkbox" ng-model="type" />-->
+    </div>
+    <p class="warn"   ng-bind='warn'></p>
+
+    <button  type="submit" class="login"  ng-click="logBtn()">登录</button>
+
+    <span class="registe" ng-click="registe()">立即注册</span>
+    <span class="forget" ng-click="forget()" >忘记密码</span>
+</form>
+
+</div>
+
+
+

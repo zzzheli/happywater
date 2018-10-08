@@ -1,0 +1,45 @@
+
+<!--<div class="loginContent"  ng-controller="regSetCtrl">-->
+    <!--<div class="head" >-->
+        <!--<i class="fa fa-chevron-left pull-left fa-lg "></i>-->
+        <!--注册-->
+    <!--</div>-->
+
+
+    <!--<form class="bg" >-->
+
+        <!--<img src="../imgs/logo.png"  class="logo" height="257" width="253"/>-->
+<div ng-controller="regSetCtrl">
+
+    <div class="shade" ng-show="show" >
+        <div class="shadeTip">
+            <div>账号注册成功！</div><div>3S后将自动跳转至首页</div>
+        </div>
+    </div>
+
+        <div class="user">
+            <img src="../imgs/14.png" height="18.5" width="14"/>
+            <input   type="password" ng-model="firstPassword" class="bor" placeholder="请设置6-18位数字和字母组成的密码"/>
+        </div>
+        <div class="user">
+            <img src="../imgs/61.png" height="18.5" width="14"/>
+            <input  type="password" ng-model="secondPassword" class="bor" placeholder="请确认6-18位数字和字母组成的密码" />
+            <!--<input type="{{type ? 'text' : 'password'}}" ng-model="password" />-->
+            <!--<input type="checkbox" ng-model="type" />-->
+        </div>
+        <p class="warn"   ng-bind='warn'></p>
+
+        <div>我已阅读并同意</div>
+
+        <button  type="button" class="login" ng-click="regSetBtn()">注册</button>
+
+</div>
+    <!--</form>-->
+
+<!--</div>-->
+
+
+
+
+
+
