@@ -55,8 +55,8 @@
             <tbody>
             <tr>
                 <td>{{$index + 1}}</td>
-                <td>{{x.userId}}</td>
-                <td>{{x.phone}}</td>
+                <td>{{x.serialId}}</td>
+                <td>{{x.phoneNumber}}</td>
                 <td>{{x.realName}}</td>
                 <td>{{x.idCard}}</td>
                 <td>{{x.assets}}</td>
@@ -64,10 +64,10 @@
                 <td>{{x.loginAt | date: 'yyyy-MM-dd'}}</td>
                 <td>{{x.status}}</td>
                 <td>
-                    <button class="btn btn-default">上线</button>
+                    <button class="btn btn-default">冻结</button>
                     <!--{{x.status | line}}-->
-                    <button class="btn btn-primary">编辑</button>
-                    <button class="btn btn-danger">删除</button>
+                    <button class="btn btn-primary">查看</button>
+
                 </td>
             </tr>
             </tbody>
