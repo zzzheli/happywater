@@ -1,0 +1,35 @@
+.errorTips {
+  color: #f00;
+  padding-left: 33%;
+  margin-top: -30px; }
+
+.padding-0 {
+  padding: 0; }
+
+.margin-0 {
+  margin: 0; }
+
+.margin-bottom-30 {
+  margin-bottom: 30px; }
+
+.lineHeight-34 {
+  line-height: 34px; }
+
+.opinion,
+.pushSetting,
+.confirm,
+.reply {
+  padding: 20px 40px 0; }
+  .opinion .container,
+  .pushSetting .container,
+  .confirm .container,
+  .reply .container {
+    padding-left: 5%; }
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin: 20px auto; }
+
+/*# sourceMappingURL=details.css.map */

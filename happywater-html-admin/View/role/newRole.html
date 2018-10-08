@@ -1,0 +1,36 @@
+<div class="newRole" ng-controller="newRoleCtrl">
+    <div class="primary-list margin-0">
+        <div class="list-title">
+            <span class="list-title-text">角色新增/编辑</span>
+            <button class="btn btn-default pull-right" onclick="history.back(-1)">返回</button>
+        </div>
+        <div class="container input-eles">
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">角色名：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control" placeholder="请输入banner图标题（2~10个汉字）">
+                </div>
+            </div>
+            <p ng-show="" class="errorTips">角色名重复，请重试。</p>
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">权限：<br>（可多选）</p>
+                </div>
+                <div class="col-xs-8 padding-0 lineHeight-34">
+                    <input type="checkbox" name="roles" id="admin">
+                    <label for="admin">管理员</label>
+                    <input type="checkbox" name="roles" id="operate">
+                    <label for="operate">运营</label>
+                    <input type="checkbox" name="roles" id="service">
+                    <label for="service">客服</label>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary">保存</button>
+            <button class="btn btn-default">取消</button>
+        </div>
+    </div>
+</div>

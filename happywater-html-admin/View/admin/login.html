@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="login-box" ng-controller="loginCtrl">
+        <form name="loginForm" novalidate ng-submit="submitForm(loginForm.$valid)" >
+            <h2 class="login-title">欢迎光临！</h2>
+            <div class="inputEle">
+                <input id="user" type="text" name="name" class="username form-control" placeholder="请输入用户名" ng-model="user.name" required>
+                <label for="user"><img src="../../imgs/user.png" class="icon"></label>
+            </div>
+            <p class="tips" ng-show="loginForm.name.$invalid && !loginForm.name.$pristine">用户名不能为空</p>
+            <div class="inputEle">
+                <input id="pwd" type="password" name="pwd" class="password form-control" placeholder="请输入密码" ng-model="user.pwd" required autocomplete='pwd'>
+                <label for="pwd"><img src="../../imgs/psw.png" class="icon"></label>
+            </div>
+            <p class="tips" ng-show="loginForm.pwd.$invalid && !loginForm.pwd.$pristine">密码不能为空</p>
+            <div>
+                <p id="msg" ng-bind="message" class="msg"></p>
+            <div><button class="btn btn-primary inputEle log-in" ng-click="submit()" ng-disabled="loginForm.$invalid">登录</button></div>
+            </div>
+        </form>
+    </div>
+</div>

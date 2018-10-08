@@ -1,0 +1,56 @@
+<div class="newAccount" ng-controller="newAccountCtrl">
+    <div class="primary-list margin-0">
+        <div class="list-title">
+            <span class="list-title-text">账户新增</span>
+            <button class="btn btn-default pull-right" onclick="history.back(-1)">返回</button>
+        </div>
+        <div class="container input-eles">
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">账户名：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control" placeholder="请输入banner图标题（2~10个汉字）">
+                </div>
+            </div>
+            <p ng-show="" class="errorTips">账户名格式错误/重复，请重试。</p>
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">密码：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control" placeholder="请输入URL地址。">
+                </div>
+            </div>
+            <p ng-show="" class="errorTips">密码格式错误，请重试。</p>
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">角色：<br>（可多选）</p>
+                </div>
+                <div class="col-xs-8 padding-0 lineHeight-34">
+                    <input type="checkbox" name="roles" id="admin">
+                    <label for="admin">管理员</label>
+                    <input type="checkbox" name="roles" id="operate">
+                    <label for="operate">运营</label>
+                    <input type="checkbox" name="roles" id="service">
+                    <label for="service">客服</label>
+                </div>
+            </div>
+            <div class="row margin-0 margin-bottom-30 lineHeight-34">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">状态：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="radio" name="status" id="enable">
+                    <label for="enable">启用</label>
+                    <input type="radio" name="status" id="disable">
+                    <label for="disable">禁用</label>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary">保存</button>
+            <button class="btn btn-default">取消</button>
+        </div>
+    </div>
+</div>

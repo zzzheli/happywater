@@ -1,0 +1,84 @@
+<!--<h1>你想对账号干什么！</h1>-->
+<!--<img src="../../imgs/elili.jpg" alt="" width="400">-->
+<div class="account" ng-controller="accountCtrl">
+    <div class="search">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">账户ID：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">角色：</div>
+                                <div class="col-md-8 col-xs-9">
+                                    <select ng-model="type" class="select form-control" id="selectType">
+                                        <option ng-repeat="x in reType" value="{{x.value}}">{{x.name}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">账户名：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">创建人：</div>
+                                <div class="col-md-8 col-xs-9">
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-default" type="reset">重置</button></div>
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-primary" type="submit">查询</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="primary-list">
+        <div class="list-title">
+            <span class="list-title-text">账户列表</span>
+            <button class="btn btn-default pull-right" ui-sref="home.newAccount">新增</button>
+        </div>
+        <table class="table table-hover">
+            <thead>
+            <th>序号</th>
+            <th>账户ID</th>
+            <th>账户名</th>
+            <th>角色</th>
+            <th>创建人</th>
+            <th>创建时间</th>
+            <th>更新人</th>
+            <th>更新时间</th>
+            <th>状态</th>
+            <th>操作</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{$index + 1}}</td>
+                <td>{{x.accountId}}</td>
+                <td>{{x.accountName}}</td>
+                <td>{{x.role}}</td>
+                <td>{{x.creatAuthor}}</td>
+                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.updateAuthor}}</td>
+                <td>{{x.updateAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.status}}</td>
+                <td>
+                    <button class="btn btn-default">上线</button>
+                    <!--{{x.status | line}}-->
+                    <button class="btn btn-primary">编辑</button>
+                    <button class="btn btn-danger">删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

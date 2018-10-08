@@ -1,0 +1,32 @@
+<div class="home" ng-controller="homeCtrl">
+    <div class="nav">
+        <div class="topic pull-left">
+            <h2 ng-click="surprise()">HAPPYWATER</h2>
+        </div>
+        <div class="nav-bar pull-right">
+            <ul>
+                <li class="user-name pull-left" ng-click="clickuser()">欢迎回来，韩小燃{{user-name}}</li>
+                <li class="role-name pull-left" ng-click="clickrole()">超级管理员{{role-name}}</li>
+                <li class="logout pull-left" ng-click="logout()"><i class="fa fa-power-off"></i>&nbsp;注销</li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar pull-left">
+        <div class="home-border">
+            <sidebar>
+                <li class="panel-title father-title" ui-sref="home">
+                    <div class="home-page">
+                        <span class="pull-left fa fa-home"></span>
+                        <span class="title-text">欢迎页</span>
+                        <i></i>
+                    </div>
+                </li>
+            </sidebar>
+        </div>
+    </div>
+    <div ui-view class="pull-left contain">
+        <h2 align="center">快乐，就完事儿了~</h2>
+        <img src="../../imgs/happy.jpg" class="happy">
+    </div>
+
+</div>

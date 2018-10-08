@@ -1,0 +1,77 @@
+<!--<h1>真的不吃我一发安利吗？</h1>-->
+<!--<img src="../../imgs/madong.jpg" alt="" width="400">-->
+<div class="recommend" ng-controller="recommendCtrl">
+    <div class="search">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">图片ID：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">图片标题：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">创建人：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">更新人：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-default" type="reset">重置</button></div>
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-primary" type="submit">查询</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="primary-list">
+        <div class="list-title">
+            <span class="list-title-text">推荐列表</span>
+            <button class="btn btn-default pull-right" ui-sref="home.newRecommend">新增</button>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <th>序号</th>
+                <th>图片ID</th>
+                <th>图片标题</th>
+                <th>缩略图</th>
+                <th>创建人</th>
+                <th>创建时间</th>
+                <th>更新人</th>
+                <th>更新时间</th>
+                <th>状态</th>
+                <th>操作</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{$index + 1}}</td>
+                <td>{{x.pictureId}}</td>
+                <td>{{x.pictureTitle}}</td>
+                <td><img src="{{x.img}}"></td>
+                <td>{{x.creatAuthor}}</td>
+                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.updateAuthor}}</td>
+                <td>{{x.updateAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.status}}</td>
+                <td>
+                    <button class="btn btn-default">上线</button>
+                    <!--{{x.status | line}}-->
+                    <button class="btn btn-primary">编辑</button>
+                    <button class="btn btn-danger">删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

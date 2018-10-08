@@ -1,0 +1,78 @@
+<!--<h1>模块什么的就交给我吧！</h1>-->
+<!--<img src="../../imgs/meizhiliu.jpg" alt=""  width="400">-->
+<div class="module" ng-controller="moduleCtrl">
+    <div class="search">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">模块ID：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">模块名：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">父模块：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">创建人：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-default" type="reset">重置</button></div>
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-primary" type="submit">查询</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="primary-list">
+        <div class="list-title">
+            <span class="list-title-text">模块管理</span>
+            <button class="btn btn-default pull-right" ui-sref="home.newModule">新增</button>
+        </div>
+        <table class="table table-hover">
+            <thead>
+            <th>序号</th>
+            <th>模块ID</th>
+            <th>模块名</th>
+            <th>URL地址</th>
+            <th>父模块ID</th>
+            <th>创建人</th>
+            <th>创建时间</th>
+            <th>更新人</th>
+            <th>更新时间</th>
+            <th>模块类型</th>
+            <th>操作</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{$index + 1}}</td>
+                <td>{{x.moduleId}}</td>
+                <td>{{x.moduleName}}</td>
+                <td>{{x.url}}</td>
+                <td>{{x.fatherId}}</td>
+                <td>{{x.creatAuthor}}</td>
+                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.updateAuthor}}</td>
+                <td>{{x.updateAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.moduleType}}</td>
+                <td>
+                    <button class="btn btn-primary">编辑</button>
+                    <button class="btn btn-danger">删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

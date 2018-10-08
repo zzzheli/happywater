@@ -1,0 +1,48 @@
+<div class="newModule" ng-controller="newModuleCtrl">
+    <div class="primary-list margin-0">
+        <div class="list-title">
+            <span class="list-title-text">模块新增/编辑</span>
+            <button class="btn btn-default pull-right" onclick="history.back(-1)">返回</button>
+        </div>
+        <div class="container input-eles">
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">模块名：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control" placeholder="请输入模块名。">
+                </div>
+            </div>
+            <p ng-show="" class="errorTips">模块名重复，请重试。</p>
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item">URL地址：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control" placeholder="请输入资源的网络地址，可为空。">
+                </div>
+            </div>
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item required">父模块ID：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control" placeholder="请输入数字ID，0表示自身为父模块。">
+                </div>
+            </div>
+            <p ng-show="" class="errorTips">ID格式错误，请重试。</p>
+            <div class="row margin-0 margin-bottom-30">
+                <div class="col-xs-4 padding-0">
+                    <p class="search-item">模块类型：</p>
+                </div>
+                <div class="col-xs-8 padding-0">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary">保存</button>
+            <button class="btn btn-default">取消</button>
+        </div>
+    </div>
+</div>

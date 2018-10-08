@@ -1,0 +1,81 @@
+<!--<h1>我们一定会把产品完美完成的！~</h1>-->
+<!--<img src="../../imgs/jiatenghui.jpg" alt="" width="400">-->
+<div class="recommend" ng-controller="recommendCtrl">
+    <div class="search">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">产品ID：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">产品名称：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">创建人：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 search-items">
+                                <div class="col-md-4 col-xs-3 search-item">状态：</div>
+                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-default" type="reset">重置</button></div>
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-primary" type="submit">查询</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="primary-list">
+        <div class="list-title">
+            <span class="list-title-text">产品列表</span>
+            <button class="btn btn-default pull-right">新增</button>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <th>序号</th>
+                <th>产品ID</th>
+                <th>产品名称</th>
+                <th>预计年利率（%）</th>
+                <th>投资周期（天）</th>
+                <th>起投金额（元）</th>
+                <th>最小增减金额（元）</th>
+                <th>还款方式</th>
+                <th>创建人</th>
+                <th>创建时间</th>
+                <th>状态</th>
+                <th>操作</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{$index + 1}}</td>
+                <td>{{x.productId}}</td>
+                <td>{{x.productName}}</td>
+                <td>{{x.rate}}</td>
+                <td>{{x.cycle}}</td>
+                <td>{{x.startMoney}}</td>
+                <td>{{x.minMoney}}</td>
+                <td>{{x.payType}}</td>
+                <td>{{x.updateAuthor}}</td>
+                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.status}}</td>
+                <td>
+                    <button class="btn btn-default">上线</button>
+                    <!--{{x.status | line}}-->
+                    <button class="btn btn-primary">编辑</button>
+                    <button class="btn btn-danger">删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
