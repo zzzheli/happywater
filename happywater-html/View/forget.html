@@ -1,0 +1,38 @@
+
+<div class="loginContent"  ng-controller="forgetCtrl">
+    <div class="head" >
+        <i class="fa fa-chevron-left pull-left fa-lg" onclick="history.go(-1)"></i>
+        找回密码
+    </div>
+
+
+    <form class="bg" >
+
+        <img src="../imgs/logo.png"  class="logo" height="257" width="253"/>
+
+
+            <div ng-hide="hide">
+                <div class="user">
+                    <img src="../imgs/13.png" height="19" width="13"/>
+                    <input   type="search" ng-model="phoneNumber" class="bor" placeholder="请输入您的手机号"/>
+                </div>
+                <div class="psw">
+                    <img src="../imgs/58.png" height="17" width="13"/>
+                    <input  type="text"  ng-model="msgCode" class="bor" placeholder="请输入验证码" />
+                    <input type="button" class="btn" id="get2" value="获取验证码" ng-click="getCode()" />
+                </div>
+                <p class="warn"   ng-bind='warn'></p>
+
+                <button  type="button" class="login"  ng-click="forBtn()">下一步</button>
+            </div>
+        <div ui-view> </div>
+
+    </form>
+
+</div>
+
+
+
+
+
+

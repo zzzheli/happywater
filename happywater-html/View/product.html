@@ -1,0 +1,45 @@
+<div class="loginContent" ng-controller="productCtrl" >
+    <div class="head" >
+        <i class="fa fa-chevron-left pull-left fa-lg "></i>
+        {{name}}
+    </div>
+
+    <div class="proContent" >
+        <div class="proProfit" style="margin: 10px 0" >{{proProfit}}%</div>
+        <div class="financeTip" style="margin: 10px 0 20px">预期年化收益率</div>
+
+        <div class="proRow">
+            <div >
+                <div>投资周期</div>
+                <div>{{investmentCycle}}天</div>
+            </div>
+
+            <div>
+                <div>起投金额</div>
+                <div>{{minAmount}}</div>
+            </div>
+
+            <div>
+                <div>增减金额</div>
+                <div>{{minIncrement}}</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="proRow">
+        <span ui-sref="product.introduction">产品简介</span>
+        <span ui-sref="product.moreInfo">更多信息</span>
+        <span ui-sref="product.records">投资记录</span>
+    </div>
+
+    <div  ui-view></div>
+
+    <!--<div class="buyNow" ui-sref="buyNow">-->
+    <div class="buyNow" ng-click = "buyNow()">
+        立即购买
+    </div>
+
+
+
+</div>

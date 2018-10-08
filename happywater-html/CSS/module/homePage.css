@@ -1,0 +1,42 @@
+.footList{
+    position:fixed;
+    margin:0 auto;
+    bottom: 0;
+    left:0;
+    right:0;
+    max-width: 768px;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-top:1px solid #d9d9d9;
+
+}
+.nav_tab_head ::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*.nav_tab_head{*/
+    /*display: -webkit-box;*/
+    /*display: -moz-box;*/
+/*}*/
+.footList li{
+    float: left;
+    margin: 0 calc(16.66% - 13.5px);
+    font-size: .5em;
+}
+nav a .icon {
+    width: 27px;
+    height: 27px;
+    background-size: 100% 100%;
+}
+.home .icon {
+    background-image: url(/imgs/31.png);
+}
+.financing .icon {
+    background-image: url(/imgs/30.png);
+}
+.my .icon {
+    background-image: url(/imgs/32.png);
+}
