@@ -2,7 +2,7 @@ app.controller("homeCtrl", function ($scope,$http,$state,$stateParams) {
     $scope.financial = function () {
         $state.go("homePage.financial");
 
-        $scope.getSearch = function () {
+        $scope.getFinances = function () {
 
             $http({
                 method: 'GET',
@@ -34,7 +34,7 @@ app.controller("homeCtrl", function ($scope,$http,$state,$stateParams) {
 
             })
         };
-        $scope.getSearch();
+        $scope.getFinances();
 
 
     };
