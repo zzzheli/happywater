@@ -1,7 +1,9 @@
 <!--<h1>用户大大请喝茶！</h1>-->
 <!--<img src="../../imgs/hecha.jpg" alt="" width="400">-->
-<div class="recommend" ng-controller="recommendCtrl">
-    <div class="search">
+<div ng-controller="userCtrl">
+    <div ui-view>
+        <div class="recommend" ng-controller="recommendCtrl">
+            <div class="search">
         <form>
             <div class="container">
                 <div class="row">
@@ -36,7 +38,7 @@
         </form>
     </div>
     <div class="primary-list">
-        <div class="list-title">
+        <div class="list-title" >
             <span class="list-title-text">用户列表</span>
         </div>
         <table class="table table-hover">
@@ -53,24 +55,26 @@
             <th>操作</th>
             </thead>
             <tbody>
-            <tr>
+            <tr ng-repeat = "x in userList">
                 <td>{{$index + 1}}</td>
                 <td>{{x.serialId}}</td>
                 <td>{{x.phoneNumber}}</td>
                 <td>{{x.realName}}</td>
                 <td>{{x.idCard}}</td>
-                <td>{{x.assets}}</td>
-                <td>{{x.totalIncome}}</td>
-                <td>{{x.loginAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.status}}</td>
+                <td>{{x.balance}}</td>
+                <td>{{x.profit}}</td>
+                <td>{{x.createdAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.lock}}</td>
                 <td>
                     <button class="btn btn-default">冻结</button>
                     <!--{{x.status | line}}-->
-                    <button class="btn btn-primary">查看</button>
+                    <button class="btn btn-primary" ng-click = "seeUser()">查看</button>
 
                 </td>
             </tr>
             </tbody>
         </table>
+    </div>
+    </div>
     </div>
 </div>
