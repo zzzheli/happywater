@@ -1,11 +1,11 @@
 angular.module('myApp')
-    .factory('myService',['$http', 'path', function($http, path){
+    .factory('myService',function($http, path){
 
         return{
             // 登陆注销
             // login
-            login: function (data, config) {
-                return $http.post(path.login, data, config)
+            login: function (params) {
+                return $http.post(path.login,params)
             },
             // logout
             logout: function(id){
@@ -184,4 +184,4 @@ angular.module('myApp')
 
         }
 
-    }]);
+    });
