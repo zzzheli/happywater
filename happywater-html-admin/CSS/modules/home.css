@@ -34,7 +34,7 @@
 
 .sidebar {
   width: 250px;
-  padding: 50px 30px 3000px;
+  padding: 50px 0 3000px;
   margin-bottom: -3000px;
   overflow: hidden;
   background-color: #333;
