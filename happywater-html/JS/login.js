@@ -46,7 +46,7 @@ app.controller("loginCtrl", function ($scope,$http,$state) {
     $scope.logBtn = function () {
         $http({
             method:"POST",
-            url:"/carrots-admin-ajax/user/login/account",
+            url:"/happywater-ajax/user/login/account",
             params: {
                 phoneNumber : $scope.phoneNumber,
                 password: $scope.passWord
@@ -87,7 +87,7 @@ app.controller("registeCtrl", function ($scope,$http,$state) {
     $scope.getCode = function () {
         $http({
             method:"GET",
-            url:"/carrots-admin-ajax/user/register/msgcode",
+            url:"/happywater-ajax/user/register/msgcode",
             params: {
                 phoneNumber : $scope.phoneNumber
             }
@@ -119,7 +119,7 @@ app.controller("registeCtrl", function ($scope,$http,$state) {
     $scope.regBtn = function () {
         $http({
             method:"POST",
-            url:"/carrots-admin-ajax/user/register/msgcode",
+            url:"/happywater-ajax/user/register/msgcode",
             params: {
                 // phoneNumber : $scope.phoneNumber,(等部署)
                 msgCode: $scope.msgCode
@@ -153,7 +153,7 @@ app.controller("regSetCtrl", function ($scope,$http,$state,$timeout) {
     $scope.regSetBtn = function () {
         $http({
             method:"POST",
-            url:"/carrots-admin-ajax/user/register/password",
+            url:"/happywater-ajax/user/register/password",
             params: {
                 phoneNumber : $scope.phoneNumber,
                 firstPassword: $scope.firstPassword,
@@ -165,7 +165,7 @@ app.controller("regSetCtrl", function ($scope,$http,$state,$timeout) {
 
                 $http({
                     method:"POST",
-                    url:"/carrots-admin-ajax/user/login/account",
+                    url:"/happywater-ajax/user/login/account",
                     params: {
                         phoneNumber : $scope.phoneNumber,
                         password: $scope.secondPassword
@@ -216,7 +216,7 @@ app.controller("forgetCtrl", function ($scope,$http,$state) {
     $scope.getCode = function () {
         $http({
             method:"GET",
-            url:"/carrots-admin-ajax/user/reset/msgcode",
+            url:"/happywater-ajax/user/reset/msgcode",
             params: {
                 phoneNumber : $scope.phoneNumber
             }
@@ -248,7 +248,7 @@ app.controller("forgetCtrl", function ($scope,$http,$state) {
     $scope.forBtn = function () {
         $http({
             method:"POST",
-            url:"/carrots-admin-ajax/user/reset/msgcode",
+            url:"/happywater-ajax/user/reset/msgcode",
             params: {
                 // phoneNumber : $scope.phoneNumber,(等部署)
                 msgCode: $scope.msgCode
@@ -280,7 +280,7 @@ app.controller("forSetCtrl", function ($scope,$http,$state,$timeout) {
     $scope.forSetBtn = function () {
         $http({
             method:"POST",
-            url:"/carrots-admin-ajax/user/reset/password",
+            url:"/happywater-ajax/user/reset/password",
             params: {
                 phoneNumber : $scope.phoneNumber,
                 firstPassword: $scope.firstPassword,
