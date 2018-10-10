@@ -1,6 +1,20 @@
 var app = angular.module('myApp',['ui.router','ngMessages','ui.bootstrap']);
-app.config(['$stateProvider','$urlRouterProvider',
-    function ($stateProvider,$urlRouterProvider) {
+app
+    .config(['$stateProvider','$urlRouterProvider','$httpProvider',
+    function ($stateProvider,$urlRouterProvider,$httpProvider) {
+        $httpProvider.defaults.headers.common['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+        $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+        $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+        $httpProvider.defaults.headers.patch['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+
+        $httpProvider.defaults.transformRequest = function (data) {
+            if (data === undefined) {
+                return data;
+            }
+            console.log($.param(data));
+            return $.param(data);
+        };
+
         $urlRouterProvider.when('','/login');
         $stateProvider
             .state('login',{
@@ -11,20 +25,20 @@ app.config(['$stateProvider','$urlRouterProvider',
                 url: '/home',
                 templateUrl: 'View/admin/home.html'
             })
-            .state('home.account',{
-                url: '/account',
+            .state('home.Account',{
+                url: '/Account',
                 templateUrl: 'View/account/account.html'
             })
-            .state('home.banner',{
-                url: '/banner',
+            .state('home.Banner',{
+                url: '/Banner',
                 templateUrl: 'View/banner/banner.html'
             })
-            .state('home.claim',{
-                url: '/claim',
+            .state('home.debt',{
+                url: '/debt',
                 templateUrl: 'View/claim/claim.html'
             })
-            .state('home.module',{
-                url: '/module',
+            .state('home.Module',{
+                url: '/Module',
                 templateUrl: 'View/module/module.html'
             })
             .state('home.news',{
@@ -47,8 +61,8 @@ app.config(['$stateProvider','$urlRouterProvider',
                 url: '/role',
                 templateUrl: 'View/role/role.html'
             })
-            .state('home.suggestion',{
-                url: '/suggestion',
+            .state('home.opinion',{
+                url: '/opinion',
                 templateUrl: 'View/suggestion/suggestion.html'
             })
             .state('home.user',{
