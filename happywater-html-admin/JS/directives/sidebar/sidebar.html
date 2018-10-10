@@ -2,10 +2,10 @@
 <ul class="listGroup">
     <div ng-transclude></div>
     <li class="panel-title"
-        ng-repeat="x in homeTitle | orderBy: 'lv' ">
+        ng-repeat="x in homeTitle | orderBy: 'id' ">
         <div class="father-title" ng-click="list()" ng-model="titleId" ng-class="x.select ? 'border-left' : ''">
             <span class="pull-left fa fa-pencil"></span>
-            <span class="title-text">{{x.name}}</span>
+            <span class="title-text">{{x.moduleName}}</span>
             <span class="pull-right fa" ng-class="x.select ? 'fa-chevron-down' : 'fa-chevron-left'"></span>
         </div>
         <ul class="ul-sonTitle" >
@@ -14,8 +14,8 @@
                 ng-show="x.select"
                 ui-sref="{{y.url}}"
                 ng-class="{'highlight' : y.highlight }"
-                ng-repeat="y in x.title | orderBy : ['name']">
-                <span class="item-text">{{y.name}}</span>
+                ng-repeat="y in x.modules | orderBy : ['moduleName']">
+                <span class="item-text">{{y.moduleName}}</span>
             </li>
         </ul>
     </li>

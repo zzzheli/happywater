@@ -3,7 +3,7 @@
         <form name="loginForm" novalidate ng-submit="submitForm(loginForm.$valid)" >
             <h2 class="login-title">欢迎光临！</h2>
             <div class="inputEle">
-                <input id="user" type="text" name="name" class="username form-control" placeholder="请输入用户名" ng-model="user.name" required>
+                <input id="user" type="text" na               me="name" class="username form-control" placeholder="请输入用户名" ng-model="user.name" required>
                 <label for="user"><img src="../../imgs/user.png" class="icon"></label>
             </div>
             <p class="tips" ng-show="loginForm.name.$invalid && !loginForm.name.$pristine">用户名不能为空</p>

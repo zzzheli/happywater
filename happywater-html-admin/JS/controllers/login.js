@@ -6,13 +6,13 @@ app.controller('loginCtrl',function($scope, $http, $timeout, $state, myService){
                 account:$scope.user.name,
                 password:$scope.user.pwd
         };
-        // console.log($scope.params);
-        $http({
-            method:'post',
-            url:'/happywater-admin-ajax/manager/login',
-            params:$scope.params
-        })
-        // myService.login($scope.params)
+        console.log($scope.params);
+        // $http({
+        //     method:'post',
+        //     url:'/happywater-admin-ajax/manager/login',
+        //     params:$scope.params
+        // })
+        myService.login($scope.params)
                 .then(function successCallback(response){
                     // console.log(response);
                     if (response.data.code === 701) {
