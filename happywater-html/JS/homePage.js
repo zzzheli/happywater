@@ -6,7 +6,7 @@ app.controller("homeCtrl", function ($scope,$http,$state,$stateParams) {
 
             $http({
                 method: 'GET',
-                url: '/carrots-admin-ajax/user/products/0'
+                url: '/happywater-ajax/user/products/0'
                 // params: {
                 //     "id": 1,
                 //     "serialId": "P000001",

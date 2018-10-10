@@ -55,9 +55,9 @@ app.config(['$stateProvider','$urlRouterProvider',
                 url: '/user',
                 templateUrl: 'View/user/user.html'
             })
-            .state('home.user.seeUser',{
-                url: '/seeUser',
-                templateUrl: 'View/user/seeUser.html'
+            .state('home.user.userInform',{
+                url: '/userInform',
+                templateUrl: 'View/user/userInform.html'
             })
             .state('home.newBanner',{
                 url:'/newBanner',

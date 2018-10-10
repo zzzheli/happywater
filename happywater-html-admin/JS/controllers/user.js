@@ -6,7 +6,7 @@ app.controller('userCtrl',function ($scope, $http,$state, $stateParams) {
     $scope.getSearch = function () {
         $http({
             method: 'GET',
-            url: '/carrots-admin-ajax/manager/business/users/?pageNumber=0',
+            url: '/happywater-admin-ajax/manager/business/users/?pageNumber=0',
             params: {
                 // serialId: $stateParams.serialId,
                 // phoneNumber: $stateParams.phoneNumber,
@@ -28,8 +28,8 @@ app.controller('userCtrl',function ($scope, $http,$state, $stateParams) {
 
     $scope.getSearch();
 
-    $scope.seeUser = function () {
-        $state.go("home.user.seeUser");
+    $scope.userInform = function () {
+        $state.go("home.user.userInform");
 
     }
 });
@@ -41,18 +41,21 @@ app.controller('userCtrl',function ($scope, $http,$state, $stateParams) {
 
 
 
-app.controller('seeUserCtrl',function ($scope, $http,$state) {
+app.controller('userInformCtrl',function ($scope, $http,$state) {
+    $scope.getSearch = function () {
+        $http({
+            method: 'GET',
+            url: '/happywater-admin-ajax/manager/business/user/information?userId=0',
+            params:{
 
-    // $http({
-    //     method: 'GET',
-    //     url: '/carrots-admin-ajax/manager/manager/business/user/information?userId=0',
-    //     params:{
-    //
-    //     }
-    //
-    // })
+            }
+
+        })
+    };
+    $scope.getSearch();
+
 });
 
 
 
-// --------------------------------seeUser-------------------------------
+// --------------------------------userInform-------------------------------
