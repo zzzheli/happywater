@@ -1,0 +1,24 @@
+<div  ng-controller="userInformCtrl">
+    <div class="primary-list" ng-repeat = "x in userList">
+        <div class="list-title" >
+            <span class="list-title-text">用户详情</span>
+        </div>
+        <div>个人信息：</div>
+        <div>
+            <span>ID:{{x.serialId}}</span>
+            <span>手机号:{{x.phoneNumber}}</span>
+            <span>银行卡:{{x.idCard}}</span>
+        </div>
+        <div>
+            <span>真实姓名:{{x.realName}}</span>
+            <span>身份证号:{{x.idCard}}</span>
+            <span>注册时间:{{x.createdAt  | date: 'yyyy-MM-dd'}}</span>
+        </div>
+        <div>资产信息：</div>
+        <div>
+            <span>总资产:{{x.balance}}</span>
+            <span>累计收益:{{x.profit}}</span>
+        </div>
+    </div>
+
+</div>
