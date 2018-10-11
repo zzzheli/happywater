@@ -2,18 +2,6 @@ app.controller('homeCtrl',function($scope,$state,$http,myService){
 
     $(function(){
 
-        // $scope.$on('$viewContentLoaded',function(){
-        //     console.log('主页加载完毕……');
-            // $http({
-            //     method:'GET',
-            //     url:'/happywater-admin-ajax/manager/modules/0'
-            // })
-            //     myService.getModule(1)
-            //     .then(function success (res) {
-            //     console.log(res.data.data);
-            // })
-        // });
-
 
         $scope.clickuser = function(){
             $state.go('home.user')
