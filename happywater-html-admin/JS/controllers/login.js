@@ -14,7 +14,7 @@ app.controller('loginCtrl',function($scope, $http, $timeout, $state, myService){
         // })
         myService.login($scope.params)
                 .then(function successCallback(response){
-                    // console.log(response);
+                    console.log(response);
                     if (response.data.code === 701) {
                     $scope.message = '用户名不存在';
                     $timeout(function () {
@@ -26,8 +26,9 @@ app.controller('loginCtrl',function($scope, $http, $timeout, $state, myService){
                         $scope.message = '';
                     },2000);
                 }else if (response.data.code === 0) {
-                    $scope.message = '登录成功';
-                    $timeout(function () {
+                        console.log(response.data.data);
+                        $scope.message = '登录成功';
+                        $timeout(function () {
                         console.log('登陆成功……');
                         $scope.goHome();
                     }, 500);

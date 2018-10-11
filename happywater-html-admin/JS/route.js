@@ -30,7 +30,7 @@ app
                 templateUrl: 'View/account/account.html'
             })
             .state('home.Banner',{
-                url: '/Banner',
+                url: '/Banner?pageNumber&serialId&bannerTitle&creator&status',
                 templateUrl: 'View/banner/banner.html'
             })
             .state('home.debt',{
