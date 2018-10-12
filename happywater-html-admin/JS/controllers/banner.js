@@ -23,7 +23,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
             bannerTitle: $scope.bannerTitle,
             creator: $scope.creator,
             status: $scope.status
-        },{reload:false});
+        },{reload:true});
     };
 
 
@@ -35,7 +35,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
         bannerFactory.setter($scope.bannerDetail);
         $state.go('home.newBanner',{
             id: this.x.id
-        },{reload:false});
+        },{reload:true});
     };
 
     //进入新增页面
