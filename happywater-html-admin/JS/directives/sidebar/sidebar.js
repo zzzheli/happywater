@@ -1,6 +1,4 @@
-app.directive('sidebar',function ($timeout) {
-
-
+app.directive('sidebar',function () {
 
     var arr = [];
 
@@ -54,7 +52,7 @@ app.directive('sidebar',function ($timeout) {
 
                     //如果storage保存了数组就用它代替
                     $scope.homeTitle = (JSON.parse(sessionStorage.getItem('arr')) != null) ? JSON.parse(sessionStorage.getItem('arr')) : $scope.homeTitle;
-                    console.log($scope.homeTitle);
+                    // console.log($scope.homeTitle);
 
 
                 });

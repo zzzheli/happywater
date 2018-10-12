@@ -23,7 +23,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
             bannerTitle: $scope.bannerTitle,
             creator: $scope.creator,
             status: $scope.status
-        },{reload:true});
+        },{reload:false});
     };
 
 
@@ -83,6 +83,28 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
         });
 
     };
+    //删除
+    $scope.deleteBanner = function(){
+        $scope.bannerId = this.x.id;
+        $scope.deleteTip = `<p>您确认要删除吗？删除后当前banner图将永久消失。</p>`;
+        $scope.modalConfirm('删除',$scope.deleteTip,function (result) {
+            if (result === true) {
+                myService.deleteBanner($scope.bannerId)
+                    .then(function (res) {
+                        console.log(res);
+                        if (res.data.code === 0) {
+                            $state.reload('home.Banner');
+                            $scope.modalAlert('删除','删除成功');
+                        }else {
+                            $scope.modalAlert('删除','操作异常')
+                        }
+                    },function () {
+                        $scope.modalAlert('删除','删除失败')
+                    })
+            }
+        });
+    };
+
 
 
 
@@ -100,9 +122,10 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
 });
 
 //Banner新增/编辑
-app.controller('newBannerCtrl',function ($scope, $state, $stateParams, bannerFactory) {
+app.controller('newBannerCtrl',function ($scope, $state, $stateParams, bannerFactory, myService) {
     // console.log($stateParams.id);
-    console.log($stateParams);
+    // console.log($stateParams);
+    //进入新增/编辑页
     if($stateParams.id){
         $scope.pageTitle = '编辑Banner';
         $scope.detail = bannerFactory.getter();
@@ -114,7 +137,40 @@ app.controller('newBannerCtrl',function ($scope, $state, $stateParams, bannerFac
     }else{
         $scope.pageTitle = '新增Banner';
     }
+    //保存
+    $scope.saveBanner = function () {
+        $scope.params = {
+            bannerTitle: $scope.bannerTitle,
+            bannerURL: $scope.bannerURL,
+            intervalTime: $scope.intervalTime
+        };
 
+        if ($stateParams.id) {
+            myService.editBanner($stateParams.id,$scope.params)
+                .then(function (res) {
+                    console.log(res);
+                    if (res.data.code === 0){
+                        $scope.modalAlert('操作成功','保存成功',window.history.go(-1));
+                    }else {
+                        $scope.modalAlert('操作失败','保存异常');
+                    }
+                },function () {
+                    $scope.modalAlert('操作失败','保存失败');
+                })
+        }else {
+            myService.addBanner($scope.params)
+                .then(function (res) {
+                    console.log(res);
+                    if (res.data.code === 0){
+                        $scope.modalAlert('操作成功','保存成功',window.history.go(-1));
+                    }else {
+                        $scope.modalAlert('操作失败','保存异常');
+                    }
+                },function () {
+                    $scope.modalAlert('操作失败','保存失败');
+                })
+        }
+    }
 });
 
 app.factory('bannerFactory', function(){
