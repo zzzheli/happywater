@@ -71,7 +71,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
                     .then(function (res) {
                         console.log($scope.params);
                         if (res.data.code === 0) {
-                            $state.reload('home.banner');
+                            $state.reload('home.Banner');
                             $scope.modalAlert($scope.operatTip, $scope.tip2);
                         }else {
                             $scope.modalAlert($scope.operatTip,'操作异常');
