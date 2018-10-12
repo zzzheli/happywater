@@ -1,24 +1,49 @@
 <div  ng-controller="userInformCtrl">
-    <div class="primary-list" ng-repeat = "x in userList">
+    <div ui-view>
+        <div class="primary-list">
         <div class="list-title" >
             <span class="list-title-text">用户详情</span>
         </div>
+        <div class="shadePhone" >
+            <div class="shadeTip">
+            <div class="primary-list ">
+                <div class="list-title" >
+                    <span class="list-title-text" >更换</span>
+                </div>
+                <div class="user">
+                    <img src="../imgs/13.png" height="19" width="13"/>
+                    <input   type="search" ng-model="phoneNumber" class="bor" placeholder="请输入您的手机号"/>
+                </div>
+                <div class="psw">
+                    <img src="../imgs/58.png" height="17" width="13"/>
+                    <input  type="text"  ng-model="msgCode" class="bor" placeholder="请输入验证码" />
+                    <input type="button" class="btn" id="get2" value="获取验证码" ng-click="getCode()" />
+                </div>
+                <p class="warn"   ng-bind='warn'></p>
+
+            </div>
+            </div>
+        </div>
         <div>个人信息：</div>
         <div>
-            <span>ID:{{x.serialId}}</span>
-            <span>手机号:{{x.phoneNumber}}</span>
-            <span>银行卡:{{x.idCard}}</span>
+            <span>ID:{{serialId}}</span>
+            <span>手机号:{{serialId}}</span> <span class="btn btn-xs btn-success" ng-click = "replace()">更换</span>
+            <span>银行卡:{{idCard}}</span>
         </div>
         <div>
-            <span>真实姓名:{{x.realName}}</span>
-            <span>身份证号:{{x.idCard}}</span>
-            <span>注册时间:{{x.createdAt  | date: 'yyyy-MM-dd'}}</span>
+            <span>真实姓名:{{realName}}</span>
+            <span>身份证号:{{idCard}}</span>
+            <span>注册时间:{{createdAt  | date: 'yyyy-MM-dd'}}</span>
         </div>
         <div>资产信息：</div>
         <div>
-            <span>总资产:{{x.balance}}</span>
-            <span>累计收益:{{x.profit}}</span>
+            <span>总资产:{{balance}}</span>
+            <span>累计收益:{{profit}}</span>
+        </div>
+        <div>
+            <span class="btn btn-xs btn-success" ui-sref = "home.user.userInform.deal">交易记录</span>
+            <span class="btn btn-xs btn-success" ui-sref = "home.user.userInform.compact">投资合同</span>
+        </div>
         </div>
     </div>
-
 </div>

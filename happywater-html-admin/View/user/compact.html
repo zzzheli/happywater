@@ -1,0 +1,42 @@
+<div  ng-controller="compactCtrl">
+    <div ui-view>
+    <div class="primary-list">
+        <div class="list-title" >
+            <span class="list-title-text">投资合同</span>
+        </div>
+        <table class="table table-hover">
+            <thead>
+            <th>投资合同ID</th>
+            <th>真实姓名</th>
+            <th>手机号</th>
+            <th>产品名称</th>
+            <th>投资金额(元)</th>
+            <th>预期收益(元)</th>
+            <th>生效时间</th>
+            <th>失效时间</th>
+            <th>状态</th>
+            <th>操作</th>
+
+            </thead>
+            <tbody>
+            <tr ng-repeat = "x in userList">
+                <td>{{$index + 1}}</td>
+                <td>{{x.serialId}}</td>
+                <td>{{x.phoneNumber}}</td>
+                <td>{{x.realName}}</td>
+                <td>{{x.idCard}}</td>
+                <td>{{x.balance}}</td>
+                <td>{{x.profit}}</td>
+                <td>{{x.createdAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.lock}}</td>
+                <td>
+                    <button class="btn btn-primary" ui-sref = "home.user.userInform.compact.seeCompact">查看</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <pagination></pagination>
+    </div>
+    </div>
+
+</div>

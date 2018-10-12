@@ -8,12 +8,12 @@ app.directive('sidebar',function () {
         controller: function($scope,$state,myService){
             myService.getModule(0)
                 .then(function success(res){
-                    console.log(res);
-                    console.log(res.data.data);
+                    // console.log(res);
+                    // console.log(res.data.data);
                     if(res.data.code === 0){
                         $scope.homeTitle = res.data.data;
                         $scope.homeTitle.shift();
-                        console.log($scope.homeTitle);
+                        // console.log($scope.homeTitle);
                     }else if(res.data.code === 705){
                         alert('用户未登录')
                     }else if(res.data.code === 706){
