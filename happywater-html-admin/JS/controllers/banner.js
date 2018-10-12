@@ -32,12 +32,24 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
             creator: $scope.creator,
             status: $scope.status
         };
-        console.log($scope.params);
+        // console.log($scope.params);
         myService.searchBanner($scope.params)
             .then(function (res) {
                 // console.log(res);
                 $scope.bannerList = res.data.data;
             })
+    };
+
+    // 清空搜索
+    $scope.reset = function(){
+        $scope.bannerId = undefined;
+        $scope.bannerTitle = undefined;
+        $scope.creator = undefined;
+        $scope.status = undefined;
+        // $scope.search();
+
+        // 或者？
+        $scope.getSearch();
     };
 
 
