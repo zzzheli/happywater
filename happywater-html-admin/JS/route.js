@@ -86,7 +86,7 @@ app
                 templateUrl: 'View/user/seeCompact.html'
             })
             .state('home.newBanner',{
-                url:'/newBanner',
+                url:'/newBanner?id',
                 templateUrl: 'View/banner/newBanner.html'
             })
             .state('home.suggestReply',{
@@ -119,6 +119,33 @@ app
             })
 
     }]);
+app.run(['$rootScope',function($rootScope){
+    //bootbox封装
+    $rootScope.modalConfirm = function (titles, content, fn) {
+        bootbox.confirm({
+            title: titles,
+            message: content,
+            buttons: {
+                cancel: {
+                    label: '取消',
+                    className: 'btn-success'
+                },
+                confirm: {
+                    label: '确认',
+                    className: 'btn-danger'
+                }
+            },
+            callback: fn
+        })
+    };
+    $rootScope.modalAlert = function (titles, content, fn) {
+        bootbox.alert({
+            title: titles,
+            message: content,
+            callback: fn
+        })
+    }
+}]);
 
 
 

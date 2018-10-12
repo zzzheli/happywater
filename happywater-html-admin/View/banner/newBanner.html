@@ -1,45 +1,50 @@
 <div class="newBanner" ng-controller="newBannerCtrl">
     <div class="primary-list margin-0">
         <div class="list-title">
-            <span class="list-title-text">Banner图新增/编辑</span>
-            <button class="btn btn-default pull-right" onclick="history.back(-1)">返回</button>
+            <span class="list-title-text">{{pageTitle}}</span>
+            <button class="btn btn-default pull-right" onclick="history.go(-1)">返回</button>
         </div>
-        <div class="container input-eles">
-            <div class="row margin-0 margin-bottom-30">
-                <div class="col-xs-4 padding-0">
-                    <p class="search-item required">Banner图标题：</p>
+        <form name="bannerForm" novalidate>
+            <div class="container input-eles">
+                <div class="row margin-0 margin-bottom-30">
+                    <div class="col-xs-4 padding-0">
+                        <p class="search-item required">Banner图标题：</p>
+                    </div>
+                    <div class="col-xs-8 padding-0">
+                        <input type="text" class="form-control" placeholder="请输入banner图标题（2~10个汉字）" ng-model="bannerTitle" required>
+                    </div>
                 </div>
-                <div class="col-xs-8 padding-0">
-                    <input type="text" class="form-control" placeholder="请输入banner图标题（2~10个汉字）">
+                    <p ng-show="" class="errorTips">标题格式错误/重复，请重试。</p>
+                <div class="row margin-0 margin-bottom-30">
+                    <div class="col-xs-4 padding-0">
+                        <p class="search-item required">轮播间隔（S）:</p>
+                    </div>
+                    <div class="col-xs-8 padding-0">
+                        <input type="text" class="form-control" placeholder="请输入轮播间隔（数字组成的整数）" ng-model="intervalTime" required>
+                    </div>
+                </div>
+                    <p ng-show="" class="errorTips">轮播间隔错误，请重试。</p>
+                <div class="row margin-0 margin-bottom-30">
+                    <div class="col-xs-4 padding-0">
+                        <p class="search-item">URL地址：</p>
+                    </div>
+                    <div class="col-xs-8 padding-0">
+                        <input type="text" class="form-control" placeholder="请输入URL地址，可为空。" ng-model="bannerURL" >
+                    </div>
+                </div>
+                <div class="row margin-0 margin-bottom-30">
+                    <div class="col-xs-4 padding-0">
+                        <p class="search-item required">上传Banner图：</p>
+                    </div>
+                    <div class="col-xs-6 padding-0">
+                        <div>{{bannerImg}}</div>
+                    </div>
                 </div>
             </div>
-                <p ng-show="" class="errorTips">标题格式错误/重复，请重试。</p>
-            <div class="row margin-0 margin-bottom-30">
-                <div class="col-xs-4 padding-0">
-                    <p class="search-item required">轮播间隔（S）:</p>
-                </div>
-                <div class="col-xs-8 padding-0">
-                    <input type="text" class="form-control" placeholder="请输入轮播间隔（数字组成的整数）">
-                </div>
+            <div class="buttons">
+                <button class="btn btn-primary" ng-click="saveBanner()" ng-disabled="bannerForm.$invalid">保存</button>
+                <button class="btn btn-default" onclick="history.back(-1)">取消</button>
             </div>
-                <p ng-show="" class="errorTips">轮播间隔错误，请重试。</p>
-            <div class="row margin-0 margin-bottom-30">
-                <div class="col-xs-4 padding-0">
-                    <p class="search-item">URL地址：</p>
-                </div>
-                <div class="col-xs-8 padding-0">
-                    <input type="text" class="form-control" placeholder="请输入URL地址，可为空。">
-                </div>
-            </div>
-            <div class="row margin-0 margin-bottom-30">
-                <div class="col-xs-4 padding-0">
-                    <p class="search-item required">上传Banner图：</p>
-                </div>
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="btn btn-primary">保存</button>
-            <button class="btn btn-default">取消</button>
-        </div>
+        </form>
     </div>
 </div>

@@ -88,8 +88,8 @@ angular.module('myApp')
 
             //运营管理
             // editBanner
-            editBanner: function(id){
-                return $http.put(path.modifyBanner(id))
+            editBanner: function(id,params){
+                return $http.put(path.modifyBanner(id),params)
             },
             // deleteBanner
             deleteBanner: function(id){
@@ -100,8 +100,8 @@ angular.module('myApp')
                 return $http.get(path.searchBanner)
             },
             // putBanner
-            putBanner: function(id){
-                return $http.put(path.putBanner(id))
+            putBanner: function(id,params,config){
+                return $http.put(path.putBanner(id),params,config)
             },
             // getBanner
             getBanner: function(params){
@@ -110,8 +110,8 @@ angular.module('myApp')
                 })
             },
             // addBanner
-            addBanner: function(){
-                return $http.post(path.getBanner)
+            addBanner: function(params){
+                return $http.post(path.getBanner(),params)
             },
             // addMessage
             addMessage: function(){

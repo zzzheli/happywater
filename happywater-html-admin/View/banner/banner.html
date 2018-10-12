@@ -68,18 +68,18 @@
                 <td>{{$index + 1}}</td>
                 <td>{{x.serialId}}</td>
                 <td>{{x.title}}</td>
-                <td><img src="{{x.img}}"></td>
+                <td>{{x.key}}</td>
                 <td>{{x.intervalTime}}</td>
                 <td>{{x.createdBy}}</td>
                 <td>{{x.createAt | date: 'yyyy-MM-dd'}}</td>
                 <td>{{x.updatedBy}}</td>
                 <td>{{x.updateAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.status}}</td>
+                <td>{{x.status | status}}</td>
                 <td>
-                    <button class="btn btn-default">上线</button>
+                    <button class="btn btn-default" ng-click="lineBanner()">{{x.status | line}}</button>
                     <!--{{x.status | line}}-->
-                    <button class="btn btn-primary">编辑</button>
-                    <button class="btn btn-danger">删除</button>
+                    <button class="btn btn-primary" ng-click="editBanner()">编辑</button>
+                    <button class="btn btn-danger" ng-click="deleteBanner()">删除</button>
                 </td>
             </tr>
             </tbody>
