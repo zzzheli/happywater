@@ -1,7 +1,7 @@
 <div class="newBanner" ng-controller="newBannerCtrl">
     <div class="primary-list margin-0">
         <div class="list-title">
-            <span class="list-title-text">Banner图新增/编辑</span>
+            <span class="list-title-text">{{pageTitle}}</span>
             <button class="btn btn-default pull-right" onclick="history.back(-1)">返回</button>
         </div>
         <div class="container input-eles">
@@ -10,7 +10,7 @@
                     <p class="search-item required">Banner图标题：</p>
                 </div>
                 <div class="col-xs-8 padding-0">
-                    <input type="text" class="form-control" placeholder="请输入banner图标题（2~10个汉字）">
+                    <input type="text" class="form-control" placeholder="请输入banner图标题（2~10个汉字）" ng-model="bannerTitle">
                 </div>
             </div>
                 <p ng-show="" class="errorTips">标题格式错误/重复，请重试。</p>
@@ -19,7 +19,7 @@
                     <p class="search-item required">轮播间隔（S）:</p>
                 </div>
                 <div class="col-xs-8 padding-0">
-                    <input type="text" class="form-control" placeholder="请输入轮播间隔（数字组成的整数）">
+                    <input type="text" class="form-control" placeholder="请输入轮播间隔（数字组成的整数）" ng-model="intervalTime">
                 </div>
             </div>
                 <p ng-show="" class="errorTips">轮播间隔错误，请重试。</p>
@@ -28,12 +28,15 @@
                     <p class="search-item">URL地址：</p>
                 </div>
                 <div class="col-xs-8 padding-0">
-                    <input type="text" class="form-control" placeholder="请输入URL地址，可为空。">
+                    <input type="text" class="form-control" placeholder="请输入URL地址，可为空。" ng-model="bannerURL">
                 </div>
             </div>
             <div class="row margin-0 margin-bottom-30">
                 <div class="col-xs-4 padding-0">
                     <p class="search-item required">上传Banner图：</p>
+                </div>
+                <div class="col-xs-6 padding-0">
+                    <div>{{bannerImg}}</div>
                 </div>
             </div>
         </div>

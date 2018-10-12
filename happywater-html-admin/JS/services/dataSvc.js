@@ -100,8 +100,8 @@ angular.module('myApp')
                 return $http.get(path.searchBanner)
             },
             // putBanner
-            putBanner: function(id){
-                return $http.put(path.putBanner(id))
+            putBanner: function(id,params,config){
+                return $http.put(path.putBanner(id),params,config)
             },
             // getBanner
             getBanner: function(params){
