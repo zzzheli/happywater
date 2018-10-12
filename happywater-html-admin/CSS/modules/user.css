@@ -1,0 +1,25 @@
+.shadePhone{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,.7);
+
+    z-index: 10;
+}
+.shadeTip{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 50vw;
+    height: 30vw;
+    background-color: #fff;
+    padding: 20vw 7vw;
+    text-align: center;
+    line-height: 3em;
+}

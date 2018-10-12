@@ -70,8 +70,20 @@ app
                 templateUrl: 'View/user/user.html'
             })
             .state('home.user.userInform',{
-                url: '/userInform',
+                url: '/userInform?id',
                 templateUrl: 'View/user/userInform.html'
+            })
+            .state('home.user.userInform.deal',{
+                url: '/deal?id',
+                templateUrl: 'View/user/deal.html'
+            })
+            .state('home.user.userInform.compact',{
+                url: '/compact?id',
+                templateUrl: 'View/user/compact.html'
+            })
+            .state('home.user.userInform.compact.seeCompact',{
+                url: '/seeCompact?id',
+                templateUrl: 'View/user/seeCompact.html'
             })
             .state('home.newBanner',{
                 url:'/newBanner?id',
