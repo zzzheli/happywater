@@ -96,8 +96,8 @@ angular.module('myApp')
                 return $http.delete(path.modifyBanner(id))
             },
             // searchBanner
-            searchBanner: function(){
-                return $http.get(path.searchBanner)
+            searchBanner: function(params){
+                return $http.get(path.searchBanner(),params)
             },
             // putBanner
             putBanner: function(id,params,config){

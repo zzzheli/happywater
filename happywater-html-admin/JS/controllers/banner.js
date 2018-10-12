@@ -1,12 +1,11 @@
 app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, bannerFactory) {
-
     $scope.bannerDetail = {};
 
     //请求表格数据
     $scope.getSearch = function(){
         $scope.params = {};
         $scope.params.pageNumber = 1;
-
+        // console.log($scope.params);
         myService.getBanner($scope.params)
             .then(function(res){
                 // console.log(res.data.data);
@@ -17,13 +16,28 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
 
     //条件筛选
     $scope.search = function(){
-        $state.go('home.Banner',{
-            pageNumber: $scope.pageNumber,
-            serialId: $scope.bannerId,
+        // (URL方法)
+        // $state.go('home.Banner',{
+        //     pageNumber: $scope.pageNumber,
+        //     serialId: $scope.bannerId,
+        //     bannerTitle: $scope.bannerTitle,
+        //     creator: $scope.creator,
+        //     status: $scope.status
+        // },{reload:false});
+
+        // 请求方法
+        $scope.params = {
+            bannerId: $scope.bannerId,
             bannerTitle: $scope.bannerTitle,
             creator: $scope.creator,
             status: $scope.status
-        },{reload:false});
+        };
+        console.log($scope.params);
+        myService.searchBanner($scope.params)
+            .then(function (res) {
+                // console.log(res);
+                $scope.bannerList = res.data.data;
+            })
     };
 
 
