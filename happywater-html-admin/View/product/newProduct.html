@@ -1,0 +1,92 @@
+<div ng-contrller = "newProductCtrl">
+    <div class="primary-list">
+        <div class="list-title" >
+            <span class="list-title-text">产品</span>
+        </div>
+
+        <div class="panel-body table-responsive">
+            <form class="form-horizontal" name="myForm" novalidate>
+                <div class="form-group">
+                    <label class="col-md-2 ">产品名称</label>
+                    <div class="col-md-8">
+                        <input type="text" ng-model="newTitle" class="form-control"
+                               placeholder="请输入产品名称（2~10个汉字）"     name="title" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 ">预期年利率（%）</label>
+                    <div class="col-md-8">
+                        <input type="text" ng-model="newTitle" class="form-control"
+                               placeholder="请输入预期年利率（百分比，仅保留一位小数点）"     name="title" required/>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 ">投资周期（天）</label>
+                    <div class="col-md-8">
+                        <input type="text" ng-model="newTitle" class="form-control"
+                               placeholder="请输入投资周期（数字组成的整数）"     name="title" required/>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 ">起投金额（元）</label>
+                    <div class="col-md-8">
+                        <input type="text" ng-model="newTitle" class="form-control"
+                               placeholder="请输入起投金额（数字组成的整数）"     name="title" required/>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 ">最小增减金额（元）</label>
+                    <div class="col-md-8">
+                        <input type="text" ng-model="newTitle" class="form-control"
+                               placeholder="请输入最小增减金额（数字组成的整数）"     name="title" required/>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-2 word-spacing-25">类 型</label>
+                    <div class="col-md-2">
+                        <select class="select" ng-model="newType" name="status" required>
+                            <option ng-repeat="x in reType" value="{{x.value}}" ng-selected="x.value == newType" >{{x.name}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="select" ng-model="newIndustry" name="industry" ng-show="newType == 3" ng-required="newType == 3">
+                            <option ng-repeat="y in industry" value="{{y.value}}" ng-selected="y.value == newIndustry">{{y.name}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 ">产品简介</label>
+                    <div class="col-md-8">
+                        <textarea type="text" ng-model="newTitle" class="form-control"
+                                  placeholder="请详细描述您要填写的内容。（限制字数100字以内）"     name="title" required></textarea>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 ">更多信息</label>
+                    <div class="col-md-8">
+                        <textarea type="text" ng-model="newTitle" class="form-control"
+                               placeholder="请详细描述您要填写的内容。（限制字数100字以内）"     name="title" required></textarea>
+
+                    </div>
+                </div>
+
+                <div>
+                    <span class="btn btn-default">保存</span>
+                    <span class="btn btn-default" onclick="history.go(-1)">取消</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>

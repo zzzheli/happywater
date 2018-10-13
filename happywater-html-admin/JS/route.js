@@ -53,6 +53,10 @@ app
                 url: '/product',
                 templateUrl: 'View/product/product.html'
             })
+            .state('home.product.newProduct',{
+                url: '/newProduct',
+                templateUrl: 'View/product/newProduct.html'
+            })
             .state('home.recommend',{
                 url: '/recommend',
                 templateUrl: 'View/recommend/recommend.html'

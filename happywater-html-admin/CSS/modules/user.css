@@ -16,10 +16,40 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 50vw;
-    height: 30vw;
+    width: 40vw;
+    height: 240px;
+}
+.user,.psw{
+    padding: 10px;
     background-color: #fff;
-    padding: 20vw 7vw;
+    margin:  0 auto 10px auto ;
+    border-bottom: 1px solid #EAEDEE;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    -webkit-text-fill-color: #333;
+}
+.bor {
+    width: calc(100% - 135px);
+    border: 0;
+    outline:none;
+    padding: 0 0 0 10px;
+    font-size: 1.5rem;
+    border-left: 1px solid #EAEDEE;
+}
+.user .bor{
+    width: 90%;
+}
+.warn {
+
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+    color: #ff0000;
     text-align: center;
-    line-height: 3em;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance:searchfield-cancel-button;
 }
