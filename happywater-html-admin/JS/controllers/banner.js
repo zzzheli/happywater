@@ -1,8 +1,7 @@
 app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, bannerFactory) {
-    $scope.bannerDetail = {};
 
     //请求表格数据
-    $scope.getSearch = function(){
+    $scope.getBanners = function(){
         $scope.params = {};
         $scope.params.pageNumber = 1;
         // console.log($scope.params);
@@ -12,7 +11,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
                 $scope.bannerList = res.data.data;
             });
     };
-    $scope.getSearch();
+    $scope.getBanners();
 
     //条件筛选
     $scope.search = function(){
@@ -49,7 +48,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
         // $scope.search();
 
         // 或者？
-        $scope.getSearch();
+        $scope.getBanners();
     };
 
 

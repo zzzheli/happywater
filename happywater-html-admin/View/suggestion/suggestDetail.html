@@ -22,7 +22,7 @@
                         <p>提交人:</p>
                     </div>
                     <div class="col-xs-9 padding-0">
-                        <p>Nima Wang.</p>
+                        <p>{{commitBy}}</p>
                     </div>
                 </div>
                 <div class="row margin-0">
@@ -30,7 +30,8 @@
                         <p>提交时间：</p>
                     </div>
                     <div class="col-xs-9 padding-0">
-                        <p>8012年4月10日 90:32</p>
+                        <div>{{commitAt | date: 'yyyy-MM-dd'}}</div>
+                        <div>{{commitAt | date: 'HH:mm:ss'}}</div>
                     </div>
                 </div>
                 <div class="row margin-0">
@@ -38,7 +39,7 @@
                         <p>意见内容：</p>
                     </div>
                     <div class="col-xs-9 padding-0">
-                        <p>There is content.</p>
+                        <p>{{content}}</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +54,7 @@
                         <p>回复人:</p>
                     </div>
                     <div class="col-xs-9 padding-0">
-                        <p>Alice.</p>
+                        <p>{{replyBy}}</p>
                     </div>
                 </div>
                 <div class="row margin-0">
@@ -61,7 +62,8 @@
                         <p>回复时间：</p>
                     </div>
                     <div class="col-xs-9 padding-0">
-                        <p>8012年5月10日 52:61</p>
+                        <div>{{replyAt | date: 'yyyy-MM-dd'}}</div>
+                        <div>{{replyAt | date: 'HH:mm:ss'}}</div>
                     </div>
                 </div>
                 <div class="row margin-0">
@@ -69,7 +71,7 @@
                         <p>回复内容：</p>
                     </div>
                     <div class="col-xs-9 padding-0">
-                        <p>There is content.</p>
+                        <p>{{replyContent}}</p>
                     </div>
                 </div>
             </div>

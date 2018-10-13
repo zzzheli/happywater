@@ -162,12 +162,14 @@ angular.module('myApp')
                 return $http.get(path.searchRecommendation)
             },
             // getSuggestions(列表)
-            getSuggestions: function(){
-                return $http.get(path.getSuggestions)
+            getSuggestions: function(params){
+                return $http.get(path.getSuggestions(),{
+                    params:params
+                })
             },
             // replySuggestion
-            replySuggestion: function(id){
-                return $http.post(path.modifySuggestion(id))
+            replySuggestion: function(id,params){
+                return $http.post(path.modifySuggestion(id),params)
             },
             // deleteSuggestion
             deleteSuggestion: function(id){
@@ -178,8 +180,8 @@ angular.module('myApp')
                 return $http.get(path.viewSuggestion(id))
             },
             // searchSuggestion
-            searchSuggestion: function(){
-                return $http.get(path.searchSuggestion)
+            searchSuggestion: function(params){
+                return $http.get(path.searchSuggestion(),params)
             }
 
 

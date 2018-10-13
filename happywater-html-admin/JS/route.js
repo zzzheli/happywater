@@ -62,7 +62,7 @@ app
                 templateUrl: 'View/role/role.html'
             })
             .state('home.opinion',{
-                url: '/opinion',
+                url: '/opinion?pageNumber&serialId&keyWord&commitBy&phoneNumber',
                 templateUrl: 'View/suggestion/suggestion.html'
             })
             .state('home.user',{
@@ -90,11 +90,11 @@ app
                 templateUrl: 'View/banner/newBanner.html'
             })
             .state('home.suggestReply',{
-                url:'/suggestReply',
+                url:'/suggestReply?id',
                 templateUrl: 'View/suggestion/suggestReply.html'
             })
             .state('home.suggestDetail',{
-                url:'/suggestDetail',
+                url:'/suggestDetail?id',
                 templateUrl: 'View/suggestion/suggestDetail.html'
             })
             .state('home.newNews',{
