@@ -42,8 +42,8 @@ app
                 templateUrl: 'View/module/module.html'
             })
             .state('home.news',{
-                url: '/news',
-                templateUrl: 'View/news/news.html'
+                url: '/message?pageNumber',
+                templateUrl: 'View/message/message.html'
             })
             .state('home.password',{
                 url: '/password',
@@ -98,12 +98,12 @@ app
                 templateUrl: 'View/suggestion/suggestDetail.html'
             })
             .state('home.newNews',{
-                url:'/newNews',
-                templateUrl: 'View/news/newNews.html'
+                url:'/newMessage',
+                templateUrl: 'View/message/newMessage.html'
             })
             .state('home.newsDetail',{
-                url:'/newsDetail',
-                templateUrl: 'View/news/newsDetail.html'
+                url:'/messageDetail',
+                templateUrl: 'View/message/messageDetail.html'
             })
             .state('home.newRecommend',{
                 url:'/newRecommend',

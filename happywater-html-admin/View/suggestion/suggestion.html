@@ -77,8 +77,8 @@
                     <div>{{x.replyAt | date: 'HH:mm:ss'}}</div>
                 </td>
                 <td>
-                    <button class="btn btn-default replyBtn" ng-disabled='{{x.disabled}}' ng-click="reply()">回复</button>
-                    <button class="btn btn-primary viewBtn" ng-click="view()">查看</button>
+                    <button class="btn btn-default replyBtn" ng-disabled="{{x.disabled}}" ng-click="reply()">{{x.disabled | disabled}}</button>
+                    <button class="btn btn-primary viewBtn" ng-disabled="{{!x.disabled}}" ng-click="view()">查看</button>
                     <button class="btn btn-danger" ng-click="delete()">删除</button>
                 </td>
             </tr>

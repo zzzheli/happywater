@@ -134,8 +134,10 @@ angular.module('myApp')
                 return $http.get(path.searchMessage)
             },
             // getMessages
-            getMessages: function(){
-                return $http.get(path.getMessages)
+            getMessages: function(params){
+                return $http.get(path.getMessages(),{
+                    params:params
+                })
             },
             // getRecommendations
             getRecommendations: function(){

@@ -215,30 +215,3 @@ app.factory('bannerFactory', function(){
 });
 
 
-//状态转换
-app.filter('status', function() {
-    return function(status) {
-        switch (status) {
-            case false :
-                return '下线';
-                break;
-            case true :
-                return '上线';
-                break;
-        }
-    }
-});
-
-//上架 下架
-app.filter('line', function() {
-    return function(status) {
-        switch (status) {
-            case false :
-                return '上线';
-                break;
-            case true :
-                return '下线';
-                break;
-        }
-    }
-});
