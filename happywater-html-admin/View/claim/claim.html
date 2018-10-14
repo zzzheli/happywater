@@ -57,21 +57,21 @@
                 <th>操作</th>
             </thead>
             <tbody>
-            <tr>
+            <tr ng-repeat = "x in claimList">
                 <td>{{$index + 1}}</td>
-                <td>{{x.claimId}}</td>
+                <td>{{x.serialId}}</td>
                 <td>{{x.companyName}}</td>
-                <td>{{x.debtor}}</td>
-                <td>{{x.phone}}</td>
-                <td>{{x.idCard}}</td>
-                <td>{{x.amount}}</td>
-                <td>{{x.time}}</td>
-                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.endAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.surplusMoney}}</td>
+                <td>{{x.debtPerson}}</td>
+                <td>{{x.phoneNumber}}</td>
+                <td>{{x.idCardNum}}</td>
+                <td>{{x.borrowMoney}}</td>
+                <td>{{x.borrowingCycle}}</td>
+                <td>{{x.createdAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.repaymentDate | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.unmatchMoney}}</td>
                 <td>{{x.status}}</td>
                 <td>
-                    <button class="btn btn-default">上线</button>
+                    <button class="btn btn-default">匹配</button>
                     <!--{{x.status | line}}-->
                     <button class="btn btn-primary">编辑</button>
                     <button class="btn btn-danger">删除</button>
