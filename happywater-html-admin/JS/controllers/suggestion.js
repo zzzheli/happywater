@@ -67,7 +67,7 @@ app.controller('suggestCtrl',function ($scope, $state, $stateParams, myService, 
         //删除意见
         $scope.delete = function(){
             $scope.suggestionId = 1;
-            $scope.deleteTip = `<p>您确认要删除吗？删除后当前意见将永久消失。</p>`;
+            $scope.deleteTip = `<p align="center">您确认要删除吗？<br>删除后当前意见将永久消失。</p>`;
             $scope.modalConfirm('删除',$scope.deleteTip,function (result) {
                 if (result === true) {
                     myService.deleteSuggestion($scope.suggestionId)

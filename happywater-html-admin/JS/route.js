@@ -1,6 +1,5 @@
 var app = angular.module('myApp',['ui.router','ngMessages','ui.bootstrap']);
-app
-    .config(['$stateProvider','$urlRouterProvider','$httpProvider',
+app.config(['$stateProvider','$urlRouterProvider','$httpProvider',
     function ($stateProvider,$urlRouterProvider,$httpProvider) {
         $httpProvider.defaults.headers.common['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
@@ -54,7 +53,7 @@ app
                 templateUrl: 'View/product/product.html'
             })
             .state('home.recommend',{
-                url: '/recommend',
+                url: '/recommend?pageNumber',
                 templateUrl: 'View/recommend/recommend.html'
             })
             .state('home.role',{
@@ -102,11 +101,11 @@ app
                 templateUrl: 'View/message/newMessage.html'
             })
             .state('home.newsDetail',{
-                url:'/messageDetail',
+                url:'/messageDetail?id',
                 templateUrl: 'View/message/messageDetail.html'
             })
             .state('home.newRecommend',{
-                url:'/newRecommend',
+                url:'/newRecommend?id',
                 templateUrl: 'View/recommend/newRecommend.html'
             })
             .state('home.newAccount',{
@@ -135,6 +134,7 @@ app.run(['$rootScope',function($rootScope){
                     className: 'btn-danger'
                 }
             },
+            size: 'small',
             callback: fn
         })
     };
@@ -142,6 +142,7 @@ app.run(['$rootScope',function($rootScope){
         bootbox.alert({
             title: titles,
             message: content,
+            size: 'small',
             callback: fn
         })
     }

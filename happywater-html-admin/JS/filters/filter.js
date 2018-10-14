@@ -45,13 +45,30 @@ app.filter('pushStatus', function() {
     return function(status) {
         switch (status) {
             case 10 :
-                return '推送';
+                return '待推送';
                 break;
             case 20 :
                 return '已推送';
                 break;
             case 30 :
-                return '微推送';
+                return '已取消';
+        }
+    }
+});
+
+//消息管理禁用查看
+app.filter('viewMessage',function () {
+    return function (status) {
+        switch (status) {
+            case 10 :
+                return false;
+                break;
+            case 20 :
+                return true;
+                break;
+            case 30 :
+                return true;
+                break;
         }
     }
 });

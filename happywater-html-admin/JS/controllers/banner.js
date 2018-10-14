@@ -63,11 +63,6 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
         },{reload:true});
     };
 
-    //进入新增页面
-    $scope.newBanner = function(){
-        $state.go('home.newBanner')
-    };
-
     //Banner上下线(接口有误）
     $scope.lineBanner = function(){
         console.log(this.x);
@@ -75,14 +70,14 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
         $scope.bannerLine = this.x.status;
         if($scope.bannerLine === false){
             $scope.tip1 =
-                `<p>您确认要上架当前banner图吗？上架后当前banner图将在前台可见，并可点击查看。</p>`;
+                `<p align="center">您确认要上架当前banner图吗？<br>上架后当前banner图将在前台可见，并可点击查看。</p>`;
             $scope.tip2 =
-                `<p>上架成功。</p>`;
+                `<p align="center">上架成功。</p>`;
         }else{
             $scope.tip1 =
-                `<p>您确认要下架当前banner图吗？下架后当前banner图将在前台不可见，并不可点击查看。</p>`;
+                `<p align="center">您确认要下架当前banner图吗？下架后当前banner图将在前台不可见，并不可点击查看。</p>`;
             $scope.tip2 =
-                `<p>下架成功。</p>`;
+                `<p align="center">下架成功。</p>`;
         }
         $scope.operatTip = $scope.bannerLine === true ? '下架' : '上架' ;
         $scope.modalConfirm($scope.operatTip, $scope.tip1, function (result) {
@@ -111,7 +106,7 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
     //删除
     $scope.deleteBanner = function(){
         $scope.bannerId = this.x.id;
-        $scope.deleteTip = `<p>您确认要删除吗？删除后当前banner图将永久消失。</p>`;
+        $scope.deleteTip = `<p align="center">您确认要删除吗？<br>删除后当前banner图将永久消失。</p>`;
         $scope.modalConfirm('删除',$scope.deleteTip,function (result) {
             if (result === true) {
                 myService.deleteBanner($scope.bannerId)
@@ -129,13 +124,6 @@ app.controller('bannerCtrl', function ($scope, $state, $stateParams, myService, 
             }
         });
     };
-
-
-
-
-
-
-
 
 
     //状态：ng-repeat

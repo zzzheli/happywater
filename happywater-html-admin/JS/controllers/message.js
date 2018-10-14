@@ -35,7 +35,7 @@ app.controller('newsCtrl',function ($scope, $state, myService) {
             };
             myService.getMessages($scope.params)
                 .then(function (res) {
-                    console.log(res.data.data);
+                    // console.log(res.data.data);
                     if (res.data.code === 0) {
                         $scope.msgList = res.data.data;
                     }
@@ -43,15 +43,90 @@ app.controller('newsCtrl',function ($scope, $state, myService) {
         };
         $scope.getMessage();
 
+        //查询消息
+        $scope.search = function(){
+            $scope.params = {
+                createdBy: $scope.createdBy,
+                messageTitle: $scope.keyWord,
+                status: $scope.status,
+                sendAt: $scope.startDate
+            };
+            myService.searchMessage($scope.params)
+                .then(function (res) {
+                    // console.log(res.data);
+                    if (res.data.code === 0) {
+                        $scope.msgList = res.data.data;
+                    }
+                })
+        };
+        $scope.clear = function(){
+            $scope.getMessage();
+        };
 
-    })
+        $scope.view = function () {
+          $scope.messageId = this.x.id;
+          console.log(this.x);
+        };
 
+        $scope.edit = function () {
 
+        };
+
+        $scope.cancel = function () {
+            $scope.messageId = this.x.id;
+            $scope.cancelTip = `<p align="center">确认取消当前推送？<br>取消后将停止推送。</p>`;
+            $scope.modalConfirm('取消',$scope.cancelTip,function (result) {
+                if (result === true) {
+                    myService.cancelMessage($scope.messageId)
+                        .then(function (res) {
+                            console.log(res.data);
+                            if (res.data.code === 0) {
+                                $state.reload('home.news');
+                                $scope.modalAlert('取消','取消成功');
+                            }else {
+                                $scope.modalAlert('取消','操作异常')
+                            }
+                        },function () {
+                            $scope.modalAlert('取消','取消失败')
+                        })
+                }
+            });
+        };
+
+        $scope.delete = function () {
+            $scope.messageId = this.x.id;
+            $scope.deleteTip = `<p align="center">确认删除当前消息？<br>确认后将无法恢复。</p>`;
+            $scope.modalConfirm('删除',$scope.deleteTip,function (result) {
+                if (result === true) {
+                    myService.deleteMessage($scope.messageId)
+                        .then(function (res) {
+                            console.log(res.data);
+                            if (res.data.code === 0) {
+                                $state.reload('home.news');
+                                $scope.modalAlert('删除','删除成功');
+                            }else {
+                                $scope.modalAlert('删除','操作异常')
+                            }
+                        },function () {
+                            $scope.modalAlert('删除','删除失败')
+                        })
+                }
+            });
+        };
+
+    });
+    //状态：ng-repeat
+    $scope.msgStatus = [
+        {value: '', name: '全部'},
+        {value: '10', name: '待推送'},
+        {value: '20', name: '已推送'},
+        {value: '30', name: '已取消'}
+    ]
 });
 app.controller('messageDetailCtrl',function ($scope, $state) {
 
 });
-app.constructor('newMessageCtrl',function ($scope, $state) {
+app.controller('newMessageCtrl',function ($scope, $state) {
 
 });
 
