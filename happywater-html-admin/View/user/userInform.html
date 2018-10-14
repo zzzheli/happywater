@@ -4,26 +4,37 @@
         <div class="list-title" >
             <span class="list-title-text">用户详情</span>
         </div>
-        <div class="shadePhone" >
-            <div class="shadeTip">
-            <div class="primary-list ">
+
+        <div class="shadePhone" ng-show="shadePhone">
+            <div class="primary-list shadeTip " >
                 <div class="list-title" >
                     <span class="list-title-text" >更换</span>
                 </div>
-                <div class="user">
-                    <img src="../imgs/13.png" height="19" width="13"/>
-                    <input   type="search" ng-model="phoneNumber" class="bor" placeholder="请输入您的手机号"/>
-                </div>
-                <div class="psw">
-                    <img src="../imgs/58.png" height="17" width="13"/>
-                    <input  type="text"  ng-model="msgCode" class="bor" placeholder="请输入验证码" />
-                    <input type="button" class="btn" id="get2" value="获取验证码" ng-click="getCode()" />
-                </div>
-                <p class="warn"   ng-bind='warn'></p>
 
-            </div>
+                <div ng-hide = "confirm">
+                    <div class="user">
+                        <!--<img src="../imgs/13.png" height="19" width="13"/>-->
+                        <input   type="search" ng-model="phoneNumber" class="bor" placeholder="请输入您的手机号"/>
+                    </div>
+                    <div class="psw">
+                        <!--<img src="../imgs/58.png" height="17" width="13"/>-->
+                        <input  type="text"  ng-model="msgCode" class="bor" placeholder="请输入验证码" />
+                        <input type="button" class="btn btn-xs" id="get1" value="获取验证码" ng-click="getCode()" />
+                    </div>
+                    <p class="warn"   ng-bind='warn'></p>
+                    <div>
+                        <span class="btn btn-default" ng-click = "sure()">确认</span>
+                        <span class="btn btn-default" ng-click = "cancel()">取消</span>
+                    </div>
+                </div>
+
+                <div ng-show="success">
+                    <div>更换成功</div>
+                    <div class="btn btn-default" ng-click = "makeSure()" >确定</div>
+                </div>
             </div>
         </div>
+
         <div>个人信息：</div>
         <div>
             <span>ID:{{serialId}}</span>

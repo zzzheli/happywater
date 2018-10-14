@@ -28,14 +28,7 @@ app.controller('userCtrl',function ($scope, $http,$state, $stateParams) {
 
     $scope.getSearch();
 
-    // $scope.userInform = function () {
-    //
-    //     now = this.$index;
-    //     nowId = $scope.userList[now].id;
-    //     console.log(nowId);
-    //     // $state.go("home.user.userInform");
-    //
-    // }
+
 });
 
 
@@ -115,9 +108,10 @@ app.controller('userInformCtrl',function ($scope, $http,$state, $stateParams) {
     $scope.getSearch = function () {
         $http({
             method: 'GET',
-            url: '/happywater-admin-ajax/manager/business/user/information?userId='+ $stateParams.id,
+            url: '/happywater-admin-ajax/manager/business/user/information',
             params:{
-                }
+                userId:$stateParams.id
+            }
 
         }).then(function successCallback(response) {
 
@@ -136,7 +130,70 @@ app.controller('userInformCtrl',function ($scope, $http,$state, $stateParams) {
     $scope.getSearch();
 
     $scope.replace = function () {
+        $scope.shadePhone = true;
+    };
 
+    $scope.getCode = function () {
+        $http({
+            method:"GET",
+            url:"/happywater-admin-ajax/manager/business/user/phone/msg",
+            params: {
+                phoneNumber : $scope.phoneNumber
+            }
+        }).then( function success (response) {
+            if (response.data.code == 0){
+
+                var time = 60;
+                var get1 = document.getElementById('get1');
+                get1.setAttribute("disabled", "true");
+
+                var timer = setInterval(function () {
+                    get1.value = ('重新发送'+(time) + 'S');
+                    if (time == 1) {
+                        clearInterval(timer);
+                        time = 60;
+                        get1.value = "获取验证码";
+                        get1.removeAttribute("disabled");
+                    }
+                    time--;
+                }, 1000);
+
+            }else {
+                $scope.warn = response.data.message;
+            }
+
+        })
+    };
+
+    $scope.sure = function () {
+        $http({
+            method: 'PUT',
+            url: '/happywater-admin-ajax//manager/business/user/phone',
+            params:{
+                userId:$stateParams.id,
+                phoneNumber : $scope.phoneNumber,
+                msgCode:$scope.msgCode
+            }
+
+        }).then(function successCallback(response) {
+
+            if (response.data.code == 0){
+                $scope.confirm = true;
+                $scope.success = true;
+            }else {
+                $scope.warn = response.data.message;
+            }
+        });
+    };
+
+    $scope.cancel  =function () {
+        $scope.shadePhone = false;
+    };
+
+    $scope.makeSure  =function () {
+        $scope.shadePhone = false;
+        $scope.success = false;
+        $scope.confirm = false;
     };
 
 });

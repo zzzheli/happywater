@@ -52,6 +52,10 @@ app.config(['$stateProvider','$urlRouterProvider','$httpProvider',
                 url: '/product',
                 templateUrl: 'View/product/product.html'
             })
+            .state('home.product.newProduct',{
+                url: '/newProduct',
+                templateUrl: 'View/product/newProduct.html'
+            })
             .state('home.recommend',{
                 url: '/recommend?pageNumber',
                 templateUrl: 'View/recommend/recommend.html'
