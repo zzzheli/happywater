@@ -67,11 +67,11 @@ app.directive('uploadFile', function($http,myService) {
 });
 
 // 大小转换（不引入filter.js时打开注释）
-app.filter('unit', function () {
-    return function (size) {
-        // var
-        if (!isNaN(size))
-            return (size/1024/1024).toFixed(2) + 'MB';
-
-    }
-});
+// app.filter('unit', function () {
+//     return function (size) {
+//         // var
+//         if (!isNaN(size))
+//             return (size/1024/1024).toFixed(2) + 'MB';
+//
+//     }
+// });
