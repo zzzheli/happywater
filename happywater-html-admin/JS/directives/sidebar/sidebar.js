@@ -47,7 +47,7 @@ app.directive('sidebar',function () {
                         this.y.highlight = true;
                         arr = $scope.homeTitle;
                         sessionStorage.setItem('arr', JSON.stringify(arr));
-                        console.log(arr);
+                        // console.log(arr);
                     };
 
                     //如果storage保存了数组就用它代替

@@ -9,13 +9,15 @@
                         <div class="col-lg-12">
                             <div class="col-md-6 col-xs-12 search-items">
                                 <div class="col-md-4 col-xs-3 search-item">关键词：</div>
-                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                                <div class="col-md-8 col-xs-9">
+                                    <input type="text" class="form-control" ng-model="keyWord">
+                                </div>
                             </div>
                             <div class="col-md-6 col-xs-12 search-items">
                                 <div class="col-md-4 col-xs-3 search-item">消息状态：</div>
-                                <div class="col-md-6 col-xs-9">
-                                    <select ng-model="type" class="select form-control" id="selectType">
-                                        <option ng-repeat="x in reType" value="{{x.value}}">{{x.name}}</option>
+                                <div class="col-md-8 col-xs-9">
+                                    <select ng-model="type" class="select form-control" ng-model="status">
+                                        <option ng-repeat="x in msgStatus" value="{{x.value}}">{{x.name}}</option>
                                     </select>
                                 </div>
                             </div>
@@ -23,7 +25,9 @@
                         <div class="col-lg-12">
                             <div class="col-md-6 col-xs-12 search-items">
                                 <div class="col-md-4 col-xs-3 search-item">创建人：</div>
-                                <div class="col-md-8 col-xs-9"><input type="text" class="form-control"></div>
+                                <div class="col-md-8 col-xs-9">
+                                    <input type="text" class="form-control" ng-model="createdBy">
+                                </div>
                             </div>
                             <div class="col-md-6 col-xs-12 search-items">
                                 <div class="col-md-4 col-xs-3 search-item">发送时间：</div>
@@ -56,8 +60,8 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-12">
-                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-default" type="reset">重置</button></div>
-                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-primary" type="submit">查询</button></div>
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-default" type="reset" ng-click="clear()">重置</button></div>
+                        <div class="col-lg-12 col-xs-6 search-btn"><button class="btn btn-primary" type="submit" ng-click="search()">查询</button></div>
                     </div>
                 </div>
             </div>
@@ -81,20 +85,29 @@
             <th>操作</th>
             </thead>
             <tbody>
-            <tr>
+            <tr ng-repeat="x in msgList">
                 <td>{{$index + 1}}</td>
-                <td>{{x.newsTitle}}</td>
-                <td>{{x.creatAuthor}}</td>
-                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.updateAuthor}}</td>
-                <td>{{x.updateAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.status}}</td>
-                <td>{{x.sendAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.title}}</td>
+                <td>{{x.createdBy}}</td>
                 <td>
-                    <button class="btn btn-success" ui-sref="home.newsDetail">查看</button>
-                    <button class="btn btn-primary">编辑</button>
-                    <button class="btn btn-default">取消</button>
-                    <button class="btn btn-danger">删除</button>
+                    <div>{{x.createdAt | date: 'yyyy-MM-dd'}}</div>
+                    <div>{{x.createdAt | date: 'HH:mm:ss'}}</div>
+                </td>
+                <td>{{x.updatedBy}}</td>
+                <td>
+                    <div>{{x.updatedAt | date: 'yyyy-MM-dd'}}</div>
+                    <div>{{x.updatedAt | date: 'HH:mm:ss'}}</div>
+                </td>
+                <td>{{x.status | pushStatus}}</td>
+                <td>
+                    <div>{{x.sendAt | date: 'yyyy-MM-dd'}}</div>
+                    <div>{{x.sendAt | date: 'HH:mm:ss'}}</div>
+                </td>
+                <td>
+                    <button class="btn btn-success" ng-click="view()">查看</button>
+                    <button class="btn btn-primary" ng-click="edit()">编辑</button>
+                    <button class="btn btn-default" ng-disabled="{{x.status | viewMessage}}" ng-click="cancel()">取消</button>
+                    <button class="btn btn-danger" ng-click="delete()">删除</button>
                 </td>
             </tr>
             </tbody>

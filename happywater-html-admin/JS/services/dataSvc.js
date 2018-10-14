@@ -96,8 +96,8 @@ angular.module('myApp')
                 return $http.delete(path.modifyBanner(id))
             },
             // searchBanner
-            searchBanner: function(){
-                return $http.get(path.searchBanner)
+            searchBanner: function(params){
+                return $http.get(path.searchBanner(),params)
             },
             // putBanner
             putBanner: function(id,params,config){
@@ -130,24 +130,28 @@ angular.module('myApp')
                 return $http.put(path.cancelMessage(id))
             },
             // searchMessage
-            searchMessage: function(){
-                return $http.get(path.searchMessage)
+            searchMessage: function(params){
+                return $http.get(path.searchMessage(),params)
             },
             // getMessages
-            getMessages: function(){
-                return $http.get(path.getMessages)
+            getMessages: function(params){
+                return $http.get(path.getMessages(),{
+                    params:params
+                })
             },
             // getRecommendations
-            getRecommendations: function(){
-                return $http.get(path.getRecommendations)
+            getRecommendations: function(params){
+                return $http.get(path.getRecommendations(),{
+                    params: params
+                })
             },
             // addRecommendation
-            addRecommendation: function(){
-                return $http.post(path.postRecommendation)
+            addRecommendation: function(params){
+                return $http.post(path.postRecommendation(),params)
             },
             // editRecommendation
-            editRecommendation: function(id){
-                return $http.put(path.modifyRecommendation(id))
+            editRecommendation: function(id,params){
+                return $http.put(path.modifyRecommendation(id),params)
             },
             // deleteRecommendation
             deleteRecommendation: function(id){
@@ -158,16 +162,20 @@ angular.module('myApp')
                 return $http.put(path.putRecommendation(id))
             },
             // searchRecommendation
-            searchRecommendation: function(){
-                return $http.get(path.searchRecommendation)
+            searchRecommendation: function(params){
+                return $http.get(path.searchRecommendation(), {
+                    params:params
+                })
             },
             // getSuggestions(列表)
-            getSuggestions: function(){
-                return $http.get(path.getSuggestions)
+            getSuggestions: function(params){
+                return $http.get(path.getSuggestions(),{
+                    params:params
+                })
             },
             // replySuggestion
-            replySuggestion: function(id){
-                return $http.post(path.modifySuggestion(id))
+            replySuggestion: function(id,params){
+                return $http.post(path.modifySuggestion(id),params)
             },
             // deleteSuggestion
             deleteSuggestion: function(id){
@@ -178,8 +186,8 @@ angular.module('myApp')
                 return $http.get(path.viewSuggestion(id))
             },
             // searchSuggestion
-            searchSuggestion: function(){
-                return $http.get(path.searchSuggestion)
+            searchSuggestion: function(params){
+                return $http.get(path.searchSuggestion(),params)
             }
 
 

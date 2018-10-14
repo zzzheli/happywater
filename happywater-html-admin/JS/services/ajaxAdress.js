@@ -7,7 +7,7 @@ angular.module('myApp')
 
             // 注销
             logout: function(id){
-                return '/happywater-admin-ajax/manager/logout' + id
+                return '/happywater-admin-ajax/manager/logout/' + id
             },
             //获取模块（侧边栏）
             getModule: function(id){
