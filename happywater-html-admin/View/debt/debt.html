@@ -1,6 +1,7 @@
 <!--<h1>债权什么的，就让我……</h1>-->
 <!--<img src="../../imgs/xuejie.jpg" alt=""  width="400">-->
-<div class="claim" ng-controller="claimCtrl">
+<div class="claim" ng-controller="debtCtrl">
+    <div ui-view>
     <div class="search">
         <form>
             <div class="container">
@@ -57,27 +58,32 @@
                 <th>操作</th>
             </thead>
             <tbody>
-            <tr>
+            <tr ng-repeat = "x in debtList">
                 <td>{{$index + 1}}</td>
-                <td>{{x.claimId}}</td>
+                <td>{{x.serialId}}</td>
                 <td>{{x.companyName}}</td>
-                <td>{{x.debtor}}</td>
-                <td>{{x.phone}}</td>
-                <td>{{x.idCard}}</td>
-                <td>{{x.amount}}</td>
-                <td>{{x.time}}</td>
-                <td>{{x.creatAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.endAt | date: 'yyyy-MM-dd'}}</td>
-                <td>{{x.surplusMoney}}</td>
+                <td>{{x.debtPerson}}</td>
+                <td>{{x.phoneNumber}}</td>
+                <td>{{x.idCardNum}}</td>
+                <td>{{x.borrowMoney}}</td>
+                <td>{{x.borrowingCycle}}</td>
+                <td>{{x.createdAt | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.repaymentDate | date: 'yyyy-MM-dd'}}</td>
+                <td>{{x.unmatchMoney}}</td>
                 <td>{{x.status}}</td>
                 <td>
-                    <button class="btn btn-default">上线</button>
+                    <button class="btn btn-default" ui-sref="home.debt.checkDebt">查看</button>
+                    <button class="btn btn-default" ui-sref="home.debt.matching">匹配</button>
                     <!--{{x.status | line}}-->
-                    <button class="btn btn-primary">编辑</button>
+                    <button class="btn btn-primary" ui-sref="home.debt.newDebt">编辑</button>
                     <button class="btn btn-danger">删除</button>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
+    </div>
 </div>
+
+
+

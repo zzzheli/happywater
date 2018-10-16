@@ -35,7 +35,19 @@ app.config(['$stateProvider','$urlRouterProvider','$httpProvider',
             })
             .state('home.debt',{
                 url: '/debt',
-                templateUrl: 'View/claim/claim.html'
+                templateUrl: 'View/debt/debt.html'
+            })
+            .state('home.debt.newDebt',{
+                url: '/newDebt',
+                templateUrl: 'View/debt/newDebt.html'
+            })
+            .state('home.debt.matching',{
+                url: '/matching',
+                templateUrl: 'View/debt/matching.html'
+            })
+            .state('home.debt.checkDebt',{
+                url: '/checkDebt',
+                templateUrl: 'View/debt/checkDebt.html'
             })
             .state('home.Module',{
                 url: '/Module',
