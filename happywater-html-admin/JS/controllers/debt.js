@@ -1,4 +1,4 @@
-app.controller('claimCtrl',function ($scope, $http,$state, $stateParams) {
+app.controller('debtCtrl',function ($scope, $http,$state, $stateParams) {
 
         //GET请求表格数据渲染
         $scope.getSearch = function () {
@@ -19,7 +19,7 @@ app.controller('claimCtrl',function ($scope, $http,$state, $stateParams) {
                 // $scope.records = response.data.data.articleList;     //搜索后的列表数据
                 // $scope.page = $stateParams.page;                     //搜索后的页数
                 // $scope.totalItems = response.data.data.total;        //搜索后的数据总条数
-                $scope.claimList = response.data.data;
+                $scope.debtList = response.data.data;
                 console.log(response);
             });
         };
@@ -30,3 +30,39 @@ app.controller('claimCtrl',function ($scope, $http,$state, $stateParams) {
 
 });
 
+
+
+
+// -------------------------------------debt-------------------------------
+
+
+
+app.controller('newDebtCtrl',function ($scope, $http,$state, $stateParams) {
+
+
+});
+
+
+
+// -------------------------------------nweDebt-------------------------------
+
+
+app.controller('matchingCtrl',function ($scope, $http,$state, $stateParams) {
+
+
+});
+
+
+
+// -------------------------------------matching-------------------------------
+
+
+
+app.controller('checkDebtCtrl',function ($scope, $http,$state, $stateParams) {
+
+
+});
+
+
+
+// -------------------------------------matching-------------------------------
