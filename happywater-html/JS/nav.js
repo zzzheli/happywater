@@ -1,6 +1,9 @@
-app.controller("homeCtrl", function ($scope,$http,$state,$stateParams) {
+app.controller("navCtrl", function ($scope,$http,$state,$stateParams) {
+    $scope.homeDetail = function(){
+        $state.go("nav.home");
+    };
     $scope.financial = function () {
-        $state.go("homePage.financial");
+        $state.go("nav.financial");
 
         $scope.getFinances = function () {
 

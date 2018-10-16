@@ -1,12 +1,12 @@
 
-<div class="loginContent" ng-controller="homeCtrl" >
+<div class="loginContent" ng-controller="navCtrl" >
     <div ui-view></div>
 
     <footer class="footList">
         <nav>
         <ul class="nav_tab_head">
 
-            <li class="home" >
+            <li class="home" ng-click="homeDetail()">
                 <a>
                     <div class="icon">
                     </div>
@@ -14,7 +14,7 @@
                 </a>
             </li>
 
-            <!--<li class="financing"  ui-sref="homePage.financial"  >-->
+            <!--<li class="financing"  ui-sref="nav.financial"  >-->
             <li class="financing" ng-click="financial()"  >
                 <a>
                     <div class="icon">

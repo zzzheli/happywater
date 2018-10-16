@@ -1,0 +1,25 @@
+<div id="home" ng-controller="homeCtrl">
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="x in bannerList">
+                    <h4 align="center">{{x.title}}</h4>
+                    <p align="centre">{{x.description}}</p>
+                    <p align="right">——{{x.createdBy}} </p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="recommendation">
+        <br><br>
+        <h3 align="center">新手礼</h3>
+        <p align="center">13%<br>年化收益率</p><br>
+        <p align="center">起投金额5000元&nbsp;&nbsp;&nbsp;&nbsp;限额5000元</p><br>
+        <div align="center"><button class="btn-warning btn-lg">立即起购</button></div>
+    </div>
+</div>

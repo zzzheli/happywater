@@ -15,6 +15,7 @@ app.config(['$stateProvider','$urlRouterProvider','$httpProvider',
         };
 
         $urlRouterProvider.when('','/login');
+        $urlRouterProvider.otherwise('/login');
         $stateProvider
             .state('login',{
                 url: '/login',
@@ -131,7 +132,7 @@ app.config(['$stateProvider','$urlRouterProvider','$httpProvider',
             .state('home.newModule',{
                 url:'/newModule',
                 templateUrl: 'View/module/newModule.html'
-            })
+            });
 
     }]);
 app.run(['$rootScope',function($rootScope){
