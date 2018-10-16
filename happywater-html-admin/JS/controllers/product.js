@@ -39,3 +39,7 @@ app.controller('newProductCtrl',function ($scope, $http,$state, $stateParams) {
 
 
 });
+
+
+
+// -------------------------------------newProduct-------------------------------

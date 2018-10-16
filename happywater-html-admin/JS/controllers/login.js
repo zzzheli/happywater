@@ -12,7 +12,7 @@ app.controller('loginCtrl',function($scope, $http, $timeout, $state, myService,a
         // })
         myService.login($scope.params)
                 .then(function successCallback(response){
-                    // console.log(response);
+                    // console.log(response.headers().jwt);
                     if (response.data.code === 701) {
                     $scope.message = '用户名不存在';
                     $timeout(function () {
