@@ -1,12 +1,12 @@
 var app = angular.module("myApp",['ui.router']);
 
 app.config(function ($stateProvider,$urlRouterProvider) {
-    $urlRouterProvider.when('','/homePage');
+    $urlRouterProvider.when('','/nav');
 
     $stateProvider
-        .state("homePage",{
-            url:"/homePage",
-            templateUrl:"View/homePage.html"
+        .state("nav",{
+            url:"/nav",
+            templateUrl:"View/nav.html"
         })
 
         .state("login",{
@@ -29,13 +29,13 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             url:"/forgetSet",
             templateUrl:"View/forgetSet.html"
         })
-        .state("homePage.financial",{
+        .state("nav.financial",{
             url:"/financial",
             templateUrl:"View/financial.html"
         })
-        .state("homePage.homeDetail",{
-            url:"/homeDetail",
-            templateUrl:"View/home/homeDetail.html"
+        .state("nav.home",{
+            url:"/home",
+            templateUrl:"View/home/home.html"
         })
         .state("product",{
             url:"/product",
@@ -59,14 +59,6 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         })
 
 
-        // .state("homepage.article",{
-        //     url:"/article?page&size&total&startAt&endAt&status&type",
-        //     templateUrl:"article.html"
-        // })
-        // .state("homepage.newArticle",{
-        //     url:"/articleDetail?id",
-        //     templateUrl:"newArticle.html"
-        // });
 
 
 

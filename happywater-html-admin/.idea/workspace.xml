@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5c5611-d82f-4cb4-b9dd-e9484f4f7d63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../happywater-html/CSS/module/homeDetail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../happywater-html/JS/controllers/homeDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../happywater-html/View/home/homeDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/controllers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/controllers/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/controllers/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/controllers/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/directives/sidebar/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/directives/sidebar/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filters/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filters/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/message/newMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/message/newMessage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../happywater-html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/CSS/module/homeDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/CSS/module/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/CSS/module/homePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/CSS/module/nav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../happywater-html/JS/controllers/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/JS/controllers/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../happywater-html/JS/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/JS/homePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../happywater-html/View/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/View/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/JS/controllers/homeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/JS/controllers/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/JS/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/JS/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/JS/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/JS/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/View/home/homeDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/View/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../happywater-html/View/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/View/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../happywater-html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../happywater-html/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -359,7 +354,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -465,7 +460,7 @@
       <workItem from="1539072600283" duration="98951000" />
       <workItem from="1539373023190" duration="599000" />
       <workItem from="1539391075794" duration="51608000" />
-      <workItem from="1539628356685" duration="12669000" />
+      <workItem from="1539628356685" duration="13052000" />
     </task>
     <task id="LOCAL-00001" summary="router">
       <created>1538996125817</created>
@@ -597,10 +592,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328824000" />
+    <option name="totallyTimeSpent" value="329207000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13020833" />

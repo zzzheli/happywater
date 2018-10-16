@@ -60,7 +60,7 @@ app.controller("loginCtrl", function ($scope,$http,$state) {
                 loginForm = JSON.stringify(loginForm);
                 sessionStorage.setItem("loginForm",loginForm);
 
-                $state.go("homePage",{});
+                $state.go("nav",{});
             }else {
                 $scope.warn = response.data.message;
             }
@@ -182,7 +182,7 @@ app.controller("regSetCtrl", function ($scope,$http,$state,$timeout) {
                         $scope.show = true;
                         $timeout(function() {
 
-                            $state.go("homePage");
+                            $state.go("nav");
                         }, 3000)
 
 

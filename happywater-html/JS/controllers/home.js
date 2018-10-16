@@ -29,10 +29,17 @@ app.controller('homeDetailCtrl',function ($scope, $state, $http) {
     },50);
 
 
-    // $http({
-    //     method: 'GET',
-    //     url:'/happywater-ajax/user/home/banner/1'
-    // }).then(function success (res){
-    //     console.log(res);
-    // })
+    $http({
+        method: 'GET',
+        url:'/happywater-ajax/user/home/banner/1'
+    }).then(function success (res){
+        console.log('banner图',res);
+    });
+
+    $http({
+        method: 'GET',
+        url:'/happywater-ajax/user/home/recommendation/1'
+    }).then(function (res) {
+        console.log('鼎力推荐',res);
+    })
 });
