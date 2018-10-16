@@ -41,7 +41,7 @@ app.controller('loginCtrl',function($scope, $http, $timeout, $state, myService,a
             $state.go('home');
         };
         sessionStorage.clear();
-    })
+    
 
 
 });
