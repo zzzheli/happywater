@@ -126,7 +126,27 @@ app.controller('newsCtrl',function ($scope, $state, myService) {
 app.controller('messageDetailCtrl',function ($scope, $state) {
 
 });
-app.controller('newMessageCtrl',function ($scope, $state) {
+app.controller('newMessageCtrl',function ($scope, $state, $stateParams, $http) {
+    if ($stateParams.id == undefined){
+        $state.go('login');
+    }
+    console.log($stateParams.id);
 
+    $scope.confirm = function(){
+
+        console.log('发送请求……');
+        $http({
+            method: 'GET',
+            url: 'https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?cardNo=6226661203661552&cardBinCheck=true',
+            // data: formData,
+            // headers: {'Content-Type': undefined}        //不限制格式
+        })
+            .then(function (res) {
+                console.log(res.data)
+            })
+    };
+    $scope.getVal = function () {
+        console.log(this);
+    }
 });
 

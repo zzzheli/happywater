@@ -1,4 +1,7 @@
 app.controller("homeCtrl", function ($scope,$http,$state,$stateParams) {
+    $scope.homeDetail = function(){
+        $state.go("homePage.homeDetail");
+    };
     $scope.financial = function () {
         $state.go("homePage.financial");
 

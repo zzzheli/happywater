@@ -33,6 +33,10 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             url:"/financial",
             templateUrl:"View/financial.html"
         })
+        .state("homePage.homeDetail",{
+            url:"/homeDetail",
+            templateUrl:"View/home/homeDetail.html"
+        })
         .state("product",{
             url:"/product",
             templateUrl:"View/product.html"

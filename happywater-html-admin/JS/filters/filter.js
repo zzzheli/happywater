@@ -82,3 +82,32 @@ app.filter('unit', function () {
 
     }
 });
+app.filter('merry',function(){
+    return function(merry){
+        switch(merry){
+            case 0 :
+                return '否';
+                break;
+            case 1 :
+                return '是';
+                break;
+        }
+    }
+})
+app.controller('filterCtrl',function($scope){
+    $scope.people = [
+        {'name':'Ace','birthDate':'723534235230','sex':'男','height':'1.883','blood':'A','money':'648','merry':'1'},
+        {'name':'Tracy','birthDate':'891566546132','sex':'女','height':'1.655','blood':'O','money':'128','merry':'0'},
+        {'name':'Jhon','birthDate':'838465431654','sex':'男','height':'1.764','blood':'A','money':'328','merry':'0'},
+        {'name':'Black','birthDate':'740465124864','sex':'男','height':'1.836','blood':'B','money':'996','merry':'1'},
+        {'name':'Kimi','birthDate':'801513241656','sex':'男','height':'1.722','blood':'AB','money':'256','merry':'0'},
+        {'name':'Helen','birthDate':'764546465465','sex':'女','height':'1.687','blood':'O','money':'196','merry':'1'}
+    ];
+    //在controller方法内定义一个过滤方法
+    $scope.merryFilter = function(obj){
+        if(obj.merry == 1){
+            return true;
+        }
+        return false;
+    }
+});
