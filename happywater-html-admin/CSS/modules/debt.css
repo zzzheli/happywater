@@ -1,0 +1,14 @@
+.debtBox {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 11px;
+    text-align: center;
+    cursor: pointer;
+}
+.bgBlue{
+    background-color: #00ccff;!important;
+}

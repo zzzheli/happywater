@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ca4866-5e4c-4e96-8647-524efea090fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/happywater-html-admin/View/debt/checkDebt.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/happywater-html-admin/View/debt/newDebt.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/happywater-html-admin/CSS/modules/debt.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/claim.js" afterPath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/login.js" afterPath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/login.js" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/product.js" afterPath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/product.js" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/JS/route.js" afterPath="$PROJECT_DIR$/happywater-html-admin/JS/route.js" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/claim/claim.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/debt/debt.html" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/product/newProduct.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/product/newProduct.html" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/user/compact.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/user/compact.html" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/user/deal.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/user/deal.html" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/user/seeCompact.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/user/seeCompact.html" />
-      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/user/userInform.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/user/userInform.html" />
+      <change beforePath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js" afterPath="$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js" />
+      <change beforePath="$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html" afterPath="$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html" />
       <change beforePath="$PROJECT_DIR$/happywater-html-admin/index.html" afterPath="$PROJECT_DIR$/happywater-html-admin/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50305253">
+    <splitter split-orientation="horizontal" split-proportion="0.5591206">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+                <state relative-caret-position="561">
+                  <caret line="75" column="50" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -55,7 +45,7 @@
           <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/user/user.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2490">
+                <state relative-caret-position="651">
                   <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
                   <folding />
                 </state>
@@ -65,18 +55,8 @@
           <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/product/product.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2370">
-                  <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="debt.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/debt.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2220">
-                  <caret line="74" column="80" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="80" />
+                <state relative-caret-position="969">
+                  <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -86,7 +66,7 @@
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/newDebt.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
-                  <caret line="4" column="85" lean-forward="true" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
+                  <caret line="4" column="85" lean-forward="false" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
                   <folding />
                 </state>
               </provider>
@@ -95,18 +75,38 @@
           <file leaf-file-name="checkDebt.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/checkDebt.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="810">
-                  <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                <state relative-caret-position="450">
+                  <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="matching.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="debt.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/debt.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="600">
+                  <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="matching.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+                <state relative-caret-position="60">
+                  <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="debt.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/happywater-html-admin/CSS/modules/debt.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -119,44 +119,9 @@
           <file leaf-file-name="route.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/route.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+                <state relative-caret-position="-649">
+                  <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/happywater-html/JS/login.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/login.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/user.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2940">
-                  <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-                  <folding>
-                    <marker date="1539417390690" expanded="true" signature="1393:1439" ph="..." />
-                    <marker date="1539417390690" expanded="true" signature="1528:1562" ph="..." />
-                    <marker date="1539417390690" expanded="true" signature="1725:1771" ph="..." />
-                    <marker date="1539417390690" expanded="true" signature="1861:1895" ph="..." />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -164,18 +129,18 @@
           <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/product.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="840">
-                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                <state relative-caret-position="789">
+                  <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="debt.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="debt.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+                <state relative-caret-position="733">
+                  <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -184,7 +149,7 @@
           <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
             <entry file="file://D:/github/test/zzzheli.github.io/JS/task6/article.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1351">
+                <state relative-caret-position="30">
                   <caret line="93" column="64" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="64" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -215,8 +180,8 @@
           <file leaf-file-name="matching.html" pinned="false" current-in-tab="false">
             <entry file="file://D:/聚金融/demo/matching.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="269">
-                  <caret line="164" column="50" lean-forward="false" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="50" />
+                <state relative-caret-position="-201">
+                  <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
                   <folding>
                     <element signature="n#style#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -229,8 +194,8 @@
           <file leaf-file-name="zq.html" pinned="false" current-in-tab="false">
             <entry file="file://D:/聚金融/demo/zq.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="171" column="36" lean-forward="true" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
+                <state relative-caret-position="8250">
+                  <caret line="275" column="51" lean-forward="true" selection-start-line="275" selection-start-column="51" selection-end-line="275" selection-end-column="51" />
                   <folding>
                     <element signature="n#style#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -247,19 +212,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ctrl</find>
-      <find>{{</find>
-      <find>vm.save</find>
-      <find>vm.addSum</find>
-      <find>toBeMatched}</find>
-      <find>investment_contract_id</find>
       <find>.matchingAmount</find>
       <find>detail</find>
       <find>remove</find>
@@ -270,20 +229,26 @@
       <find>$rootScope</find>
       <find>mo</find>
       <find>2052</find>
-      <find>debt</find>
       <find>addSum</find>
       <find>ng-repeat</find>
       <find>toBeMatched</find>
       <find>search()</find>
       <find>size</find>
-      <find>ng-click</find>
       <find>ableClick</find>
       <find>matchedSum</find>
       <find>!add</find>
-      <find>add</find>
       <find>sum</find>
-      <find>x.add</find>
       <find>login</find>
+      <find>ng-click</find>
+      <find>x.dd</find>
+      <find>cli</find>
+      <find>add</find>
+      <find>x.add</find>
+      <find>bg-</find>
+      <find>ng-class</find>
+      <find>vm</find>
+      <find>xadd</find>
+      <find>debt</find>
     </findStrings>
     <replaceStrings>
       <replace>happyw</replace>
@@ -318,7 +283,6 @@
         <option value="$PROJECT_DIR$/happywater-html-admin/View/user/deals.html" />
         <option value="$PROJECT_DIR$/happywater-html-admin/View/user/user.html" />
         <option value="$PROJECT_DIR$/happywater-html-admin/View/user/replace.html" />
-        <option value="$PROJECT_DIR$/happywater-html-admin/index.html" />
         <option value="$PROJECT_DIR$/happywater-html/CSS/module/login.css" />
         <option value="$PROJECT_DIR$/happywater-html/index.html" />
         <option value="$PROJECT_DIR$/happywater-html/View/registe.html" />
@@ -338,17 +302,19 @@
         <option value="$PROJECT_DIR$/happywater-html-admin/JS/controllers/claim.js" />
         <option value="$PROJECT_DIR$/happywater-html-admin/View/debt/newDebt.html" />
         <option value="$PROJECT_DIR$/happywater-html-admin/View/debt/debt.html" />
-        <option value="$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js" />
         <option value="$PROJECT_DIR$/happywater-html-admin/JS/route.js" />
-        <option value="$PROJECT_DIR$/happywater-html-admin/View/debt/checkDebt.html" />
-        <option value="$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html" />
         <option value="E:/SVNN/PF/google-html-admin/CSS/sb-admin-2.css" />
         <option value="D:/聚金融/demo/matching.html" />
         <option value="D:/聚金融/demo/zhaiquan.html" />
         <option value="D:/github/test/zzzheli.github.io/JS/task6/article.html" />
         <option value="D:/github/test/zzzheli.github.io/JS/task6/pagination.html" />
-        <option value="D:/聚金融/demo/zq.html" />
         <option value="$PROJECT_DIR$/happywater-html-admin/JS/controllers/login.js" />
+        <option value="$PROJECT_DIR$/happywater-html-admin/View/debt/checkDebt.html" />
+        <option value="$PROJECT_DIR$/happywater-html-admin/CSS/modules/debt.css" />
+        <option value="D:/聚金融/demo/zq.html" />
+        <option value="$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html" />
+        <option value="$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js" />
+        <option value="$PROJECT_DIR$/happywater-html-admin/index.html" />
       </list>
     </option>
   </component>
@@ -379,23 +345,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="happywater" type="b2602c69:ProjectViewProjectNode" />
               <item name="happywater" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="happywater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="happywater" type="462c0819:PsiDirectoryNode" />
-              <item name="happywater-html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="happywater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="happywater" type="462c0819:PsiDirectoryNode" />
-              <item name="happywater-html" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="happywater" type="b2602c69:ProjectViewProjectNode" />
@@ -415,25 +371,11 @@
               <item name="JS" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="happywater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="happywater" type="462c0819:PsiDirectoryNode" />
-              <item name="happywater-html-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="happywater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="happywater" type="462c0819:PsiDirectoryNode" />
-              <item name="happywater-html-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="debt" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,7 +424,9 @@
       <workItem from="1539392188840" duration="21776000" />
       <workItem from="1539479006206" duration="13836000" />
       <workItem from="1539564965800" duration="21445000" />
-      <workItem from="1539652643637" duration="16990000" />
+      <workItem from="1539652643637" duration="19069000" />
+      <workItem from="1539738587401" duration="21894000" />
+      <workItem from="1539825723866" duration="6736000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1539159806553</created>
@@ -512,21 +456,27 @@
       <option name="project" value="LOCAL" />
       <updated>1539480964595</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="111">
+      <created>1539700596835</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539700596835</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170302000" />
+    <option name="totallyTimeSpent" value="201011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,6 +488,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -577,26 +528,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/imgs/hecha.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html/JS/forget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html/JS/registe.js" />
-    <entry file="file://$PROJECT_DIR$/happywater-html/JS/homePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html/JS/homePage.js" />
     <entry file="file://$PROJECT_DIR$/happywater-html/CSS/module/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -636,14 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/user/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,46 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/product/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
-          <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/debt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="74" column="80" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/checkDebt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/newDebt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="85" lean-forward="true" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/SVNN/PF/google-html-admin/JS/service/project-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -818,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,40 +712,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
           <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <marker date="1539417390690" expanded="true" signature="1393:1439" ph="..." />
-            <marker date="1539417390690" expanded="true" signature="1528:1562" ph="..." />
-            <marker date="1539417390690" expanded="true" signature="1725:1771" ph="..." />
-            <marker date="1539417390690" expanded="true" signature="1861:1895" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,13 +723,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/github/test/zzzheli.github.io/JS/task6/pagination.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/github/test/zzzheli.github.io/JS/task6/JS/directive/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html/JS/financial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/聚金融/demo/ng-scroll/滑动加载更多/more_msg/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/聚金融/demo/ng-scroll/滑动加载更多/more_msg/test_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html/JS/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/CSS/modules/debt.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/聚金融/demo/zq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8250">
+          <caret line="275" column="51" lean-forward="true" selection-start-line="275" selection-start-column="51" selection-end-line="275" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#3;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://D:/github/test/zzzheli.github.io/JS/task6/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1351">
+        <state relative-caret-position="30">
           <caret line="93" column="64" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -901,43 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/github/test/zzzheli.github.io/JS/task6/pagination.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/github/test/zzzheli.github.io/JS/task6/JS/directive/pagination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html/JS/financial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/聚金融/demo/matching.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="164" column="50" lean-forward="false" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="50" />
+        <state relative-caret-position="-201">
+          <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -946,38 +834,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/聚金融/demo/zq.html">
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/checkDebt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="171" column="36" lean-forward="true" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#label#1;n#div#1;n#div#3;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/newDebt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="85" lean-forward="false" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="-649">
+          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html/JS/login.js">
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/user/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="651">
+          <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/login.js">
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/product/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="969">
+          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/matching.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/View/debt/debt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="75" column="50" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happywater-html-admin/JS/controllers/debt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -25,8 +25,18 @@
                 <div class="form-group">
                     <label class="col-md-2 ">推    荐    投    资：</label>
                     <div class="col-md-8">
-                        <textarea type="text" ng-model="newTitle" class="form-control"
-                                  placeholder=""     name="title" required></textarea>
+                        <div class="form-control ">
+
+                            <div class="debtBox"
+
+                                 ng-mouseenter="x.show=true"
+                                 ng-class="{'bgBlue':xadd}"
+                                 ng-click="true? xadd = !xadd:''"
+                                 ng-mouseleave="x.show=false">111
+
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
@@ -34,9 +44,12 @@
                 <div class="form-group">
                     <label class="col-md-2 ">匹    配    债    权：</label>
                     <div class="col-md-8">
-                        <textarea type="text" ng-model="newTitle" class="form-control"
-                                  placeholder=""     name="title" required></textarea>
-
+                        <div class="form-control ">
+                            <!--<div ng-show="xadd"-->
+                            <!--class="debtBox bgBlue"-->
+                            <!--ng-repeat="x in vm.matchingList">{{x.serialId}}-->
+                            <!--</div>-->
+                        </div>
                     </div>
                 </div>
 
