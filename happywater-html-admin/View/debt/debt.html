@@ -73,7 +73,7 @@
                 <td>{{x.status}}</td>
                 <td>
                     <button class="btn btn-default" ui-sref="home.debt.checkDebt">查看</button>
-                    <button class="btn btn-default" ui-sref="home.debt.matching">匹配</button>
+                    <button class="btn btn-default" ui-sref="home.debt.matching({id:x.id, serialId:x.serialId, borrowMoney:x.borrowMoney})">匹配</button>
                     <!--{{x.status | line}}-->
                     <button class="btn btn-primary" ui-sref="home.debt.newDebt">编辑</button>
                     <button class="btn btn-danger">删除</button>

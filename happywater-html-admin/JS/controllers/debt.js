@@ -20,6 +20,7 @@ app.controller('debtCtrl',function ($scope, $http,$state, $stateParams) {
             // $scope.page = $stateParams.page;                     //搜索后的页数
             // $scope.totalItems = response.data.data.total;        //搜索后的数据总条数
             $scope.debtList = response.data.data;
+
             console.log(response);
         });
     };
@@ -51,11 +52,16 @@ app.controller('matchingCtrl',function ($scope, $http,$state, $stateParams) {
 
     var vm = this;
 
-    vm.params = {};
-    vm.ableClick = true;
 
+    // vm.ableClick = true;
 
-    console.log(vm.params.id,vm.ableClick);
+    var clickAble = true;
+
+    console.log(clickAble);
+    console.log($stateParams.id,$stateParams.serialId,$stateParams.borrowMoney);
+    $scope.companyId = $stateParams.id;
+    $scope.companySerialId = $stateParams.serialId;
+    $scope.companyBrrowMoney = Number($stateParams.borrowMoney);
 
 
     // vm.matchedSum = function (add, sum, id) {
@@ -86,7 +92,7 @@ app.controller('matchingCtrl',function ($scope, $http,$state, $stateParams) {
     $scope.getMatching = function () {
         $http({
             method: 'GET',
-            url: '/happywater-admin-ajax/manager/business/companies/compacts/10086',
+            url: '/happywater-admin-ajax/manager/business/companies/compacts/'+$stateParams.id,
             params: {
                 // serialId: $stateParams.serialId,
                 // phoneNumber: $stateParams.phoneNumber,
@@ -103,8 +109,27 @@ app.controller('matchingCtrl',function ($scope, $http,$state, $stateParams) {
             console.log(response);
         });
     };
-
     $scope.getMatching();
+
+    $scope.matchingMoney = $scope.companyBrrowMoney;
+
+
+    $scope.matchingSum = function (add, sum, id) {
+        console.log( $scope.companyBrrowMoney);
+        if ($scope.matchingMoney > 0) {
+            console.log( $scope.companyBrrowMoney);
+            if (!add) {
+
+                $scope.matchingMoney =  $scope.matchingMoney - sum;
+            } else if (add) {
+                $scope.matchingMoney =  $scope.matchingMoney + sum;
+            }
+        }
+        console.log($scope.matchingMoney,$scope.companyBrrowMoney,sum,add,clickAble);
+
+    };
+
+
 
 
 });

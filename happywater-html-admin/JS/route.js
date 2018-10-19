@@ -42,7 +42,7 @@ app.config(['$stateProvider','$urlRouterProvider','$httpProvider',
                 templateUrl: 'View/debt/newDebt.html'
             })
             .state('home.debt.matching',{
-                url: '/matching',
+                url: '/matching?id?serialId?borrowMoney',
                 templateUrl: 'View/debt/matching.html'
             })
             .state('home.debt.checkDebt',{

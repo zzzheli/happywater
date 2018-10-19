@@ -10,5 +10,8 @@
     cursor: pointer;
 }
 .bgBlue{
-    background-color: #00ccff;!important;
+    background-color: #00ccff;
+}
+.bgGrey{
+    background-color: lightgrey;
 }
